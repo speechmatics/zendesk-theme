@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root {
+  --ifm-sm-text-colour: magenta;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -1411,7 +1415,7 @@ footer ul {
   color: $text_color;
 }
 .blocks-item-link {
-  color: $brand_color;
+  color: $text_color;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
