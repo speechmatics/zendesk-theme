@@ -382,6 +382,23 @@ ul {
 .button[data-disabled], [data-disabled].pagination-next-link, [data-disabled].pagination-prev-link, [data-disabled].pagination-first-link, [data-disabled].pagination-last-link, .subscriptions-subscribe button[data-disabled], .requests-table-toolbar .organization-subscribe button[data-disabled], .community-follow button[data-disabled], .article-subscribe button[data-disabled], .section-subscribe button[data-disabled], .split-button button[data-disabled] {
   cursor: default;
 }
+.request-button {
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-family: Inter, sans-serif;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s, background 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s, border 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 0.875rem;
+    background: rgb(255, 255, 255);
+    color: rgb(52, 64, 84);
+    border: 1px solid #000;
+}
 
 .button-large, input[type=submit] {
   cursor: pointer;
@@ -699,6 +716,7 @@ ul {
   display: inline-block;
 }
 
+
 @media (max-width: 768px) {
   .nav-wrapper-desktop {
     display: none;
@@ -715,7 +733,7 @@ ul {
   }
 }
 .nav-wrapper-desktop a {
-  border: 0;
+  /*border: 0;*/
   color: $link_color;
   display: none;
   font-size: 14px;
@@ -982,10 +1000,12 @@ footer ul {
 .bottom-footer a {
   color: var(--ifm-navbar-link-color);
   margin-bottom: calc(0.5 * var(--ifm-global-spacing));
+  
 }
 
 .bottom-footer a:hover {
-  color: var(--ifm-navbar-link-hover-color);
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-nav {
@@ -1014,6 +1034,7 @@ footer ul {
   padding-right: 20%;
   align-items: center;
   margin-top: 0px;
+  
 }
 
 .footer-baseline > div,
@@ -1022,6 +1043,7 @@ footer ul {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  
 }
 
 .footer-baseline > div {
@@ -1030,6 +1052,7 @@ footer ul {
 
 .footer-baseline ul {
   list-style: none;
+  
   /*gap: calc(0.5 * var(--ifm-global-spacing));
   margin: 0;*/
 }
@@ -1068,6 +1091,7 @@ footer ul {
   }
   .footer-baseline ul {
     gap: calc(0.2 * var(--ifm-spacing-vertical));
+   
   }
   .social-links {
     position: absolute;
