@@ -67,7 +67,7 @@
           "type": "list",
           "description": "heading_font_description",
           "label": "heading_font_label",
-          "value": "'Century Gothic', sans-serif",
+          "value": "'Inter', Regular",
           "options": [
             {
               "label": "System",
@@ -140,7 +140,7 @@
           "type": "list",
           "description": "text_font_description",
           "label": "text_font_label",
-          "value": "'Century Gothic', sans-serif",
+          "value": "'Inter', Regular",
           "options": [
             {
               "label": "System",
