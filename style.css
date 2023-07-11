@@ -306,10 +306,6 @@ textarea:focus {
   }
 }
 
-.overflow-hider {
-  overflow: hidden;
-}
-
 .container-divider {
   border-top: 1px solid #ddd;
   margin-bottom: 20px;
