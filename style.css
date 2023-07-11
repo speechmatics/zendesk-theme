@@ -199,7 +199,7 @@ body {
 }
 @media (min-width: 1024px) {
   body > main {
-    min-height: 40vmax;
+    min-height: 78.2vmin;
   }
 }
 
