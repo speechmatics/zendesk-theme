@@ -392,12 +392,12 @@ ul {
     border-radius: 8px;
     cursor: pointer;
     transition: color 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s, background 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s, border 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    padding: 0.5rem 0.875rem;
-    background: rgb(255, 255, 255);
-    color: rgb(52, 64, 84);
-    border: 1px solid #000;
+    font-size: 8px;
+    /*line-height: 10px;*/
+    padding: 5px;
+    background: $background_color;
+    color: $link_color;
+    border: 1px solid #d0d5dd;
 }
 
 .button-large, input[type=submit] {
@@ -711,6 +711,7 @@ ul {
 .user-nav-list {
   display: block;
   list-style: none;
+  
 }
 .user-nav-list > li {
   display: inline-block;
@@ -737,8 +738,9 @@ ul {
   color: $link_color;
   display: none;
   font-size: 14px;
-  padding: 0 20px 0 0;
+  padding: 8px;
   width: auto;
+  text-align:center;
 }
 @media (min-width: 768px) {
   .nav-wrapper-desktop a {
