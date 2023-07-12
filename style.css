@@ -750,8 +750,8 @@ ul {
   padding: 0 0 0 20px;
 }
 .nav-wrapper-desktop a:hover, .nav-wrapper-desktop a:focus, .nav-wrapper-desktop a:active {
-  background-color: transparent;
-  color: $link_color;
+  background-color: #f9fafb;
+  color: #344054;
   text-decoration: none;
 }
 
