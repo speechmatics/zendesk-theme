@@ -14,7 +14,7 @@
     <nav class="user-nav" id="user-nav">
       <ul class="user-nav-list">
         <!--<li>{{link 'community'}}</li>-->
-        <li>{{link 'new_request' class='request-button'}}</li>
+        <li>{{#link 'new_request' class='request-button'}}Submit a Request {{/link}}</li>
         {{#unless signed_in}}
           <li>
             {{#link "sign_in" class="sign-in"}}
