@@ -897,18 +897,20 @@ ul {
 @media (min-width: 768px) {
   .user-info .dropdown-toggle::after {
     display: inline-block;
+    
   }
 }
 .user-info > button {
   border: 0;
-  color: $link_color;
+  color: $text_color;
   min-width: 0;
   padding: 0;
   white-space: nowrap;
+  
 }
 .user-info > button:hover, .user-info > button:focus {
-  color: $link_color;
-  background-color: transparent;
+  color: $text_color;
+  
 }
 .user-info > button::after {
   color: $link_color;
@@ -4700,6 +4702,9 @@ html[dir=rtl] .notification-left-aligned {
 
 .dropdown-chevron-icon {
   vertical-align: middle;
+  color: #344054;
+  width:20px;
+  height:20px;
 }
 
 .content-tags > p {
