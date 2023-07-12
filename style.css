@@ -751,7 +751,7 @@ ul {
 .nav-wrapper-desktop a:hover, .nav-wrapper-desktop a:focus, .nav-wrapper-desktop a:active {
   background-color: transparent;
   color: $link_color;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
