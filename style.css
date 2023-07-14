@@ -298,6 +298,7 @@ textarea:focus {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
+  text-align: center;
 }
 @media (min-width: 1160px) {
   .container {
