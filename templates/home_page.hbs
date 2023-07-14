@@ -44,6 +44,8 @@
         <section class="articles">
             <h2>{{ 'New Releases' }}</h2>
 
+            {{!--RTVA
+
             {{#each categories}}
                 {{#each sections}}
                     {{#each sections}}
@@ -66,6 +68,59 @@
                 {{/each}}
             </ul>
 
+            --}}
+
+            {{!BVA }}
+
+            {{#each categories}}
+                {{#each sections}}
+                    {{#each sections}}
+                        {{#is id 7251702265873}}
+                            {{ name }}
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <ul class="article-list promoted-articles">
+                                        <li class="promoted-articles-item">
+                                            <a href="{{ url }}">
+                                                {{ title }}
+
+                                            </a>
+                                        </li>
+                                    {{/if}}
+                                {{/each}}
+                            {{/is}}
+                        {{/each}}
+                    {{/each}}
+                {{/each}}
+            </ul>
+
+            {{!--BC 
+
+            {{#each categories}}
+                {{#each sections}}
+                    {{#each sections}}
+                        {{#is id 7251686780049}}
+                            {{ name }}
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <ul class="article-list promoted-articles">
+                                        <li class="promoted-articles-item">
+                                            <a href="{{ url }}">
+                                                {{ title }}
+
+                                            </a>
+                                        </li>
+                                    {{/if}}
+                                {{/each}}
+                            {{/is}}
+                        {{/each}}
+                    {{/each}}
+                {{/each}}
+            </ul>
+
+            --}}
+
+            {{!RTC }}
 
             {{#each categories}}
                 {{#each sections}}
@@ -88,6 +143,59 @@
                     {{/each}}
                 {{/each}}
             </ul>
+
+            {{!--LiD
+
+            {{#each categories}}
+                {{#each sections}}
+                    {{#each sections}}
+                        {{#is id 7402921292049}}
+                            {{ name }}
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <ul class="article-list promoted-articles">
+                                        <li class="promoted-articles-item">
+                                            <a href="{{ url }}">
+                                                {{ title }}
+
+                                            </a>
+                                        </li>
+                                    {{/if}}
+                                {{/each}}
+                            {{/is}}
+                        {{/each}}
+                    {{/each}}
+                {{/each}}
+            </ul>
+
+            --}}
+
+            {{!--GPU Inference
+
+            {{#each categories}}
+                {{#each sections}}
+                    {{#each sections}}
+                        {{#is id 14280571789329}}
+                            {{ name }}
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <ul class="article-list promoted-articles">
+                                        <li class="promoted-articles-item">
+                                            <a href="{{ url }}">
+                                                {{ title }}
+
+                                            </a>
+                                        </li>
+                                    {{/if}}
+                                {{/each}}
+                            {{/is}}
+                        {{/each}}
+                    {{/each}}
+                {{/each}}
+            </ul>
+
+            --}}
+
         </section>
     </section>
 
