@@ -1385,6 +1385,12 @@ footer ul {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+.articles {
+  margin: auto;
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
   .promoted-articles {
     flex-direction: row;
@@ -1392,6 +1398,7 @@ footer ul {
 }
 .promoted-articles-item {
   flex: 1 0 auto;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   .promoted-articles-item {
