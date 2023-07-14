@@ -397,6 +397,7 @@ ul {
     padding: 5px;
     background: $background_color;
     border: 1px solid #d0d5dd;
+    margin-right: 10px;
 }
 
 .button-large, input[type=submit] {
@@ -915,6 +916,7 @@ ul {
 .user-info > button::after {
   color: $link_color;
   padding-right: 15px;
+  
 }
 [dir=rtl] .user-info > button::after {
   padding-left: 15px;
@@ -1366,6 +1368,17 @@ footer ul {
   margin-top: 10px;
 }
 
+/***** CSS Modifications for Category Images *****/
+.categories .blocks-item-link {
+  display: flex;
+  align-items: center;
+}
+
+.blocks-item img, .category-page-images, .section-page-images {
+  margin-bottom: 35px;
+  width: 35px;
+  height: 35px;
+}
 /***** Homepage *****/
 .section {
   margin-bottom: 40px;
@@ -4604,10 +4617,20 @@ html[dir=rtl] .notification-left-aligned {
   padding: 0;
   text-align: initial;
   vertical-align: middle;
+
 }
 .dropdown-toggle:hover {
   text-decoration: none;
+  
 }
+
+.dropdown-toggle:hover .dropdown-chevron-icon {
+  rotate: 180deg;
+ 
+}
+
+
+
 .dropdown-toggle > * {
   display: inline-block;
 }
