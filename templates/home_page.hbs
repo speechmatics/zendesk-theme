@@ -45,31 +45,38 @@
         <section class="articles">
             <h1>{{ 'New Releases' }}</h1>
 
-            {{!--RTVA
+            {{!RTVA}}
 
             {{#each categories}}
                 {{#each sections}}
                     {{#each sections}}
-                        {{#is id 7251702265873}}
-                            {{ name }}
-                            {{#each articles}}
-                                {{#if promoted}}
-                                    <ul class="article-list promoted-articles">
-                                        <li class="promoted-articles-item">
-                                            <a href="{{ url }}">
-                                                {{ title }}
-
-                                            </a>
-                                        </li>
-                                    {{/if}}
-                                {{/each}}
-                            {{/is}}
-                        {{/each}}
+                        {{#is id 7251718438289}}
+                            <section class="categories blocks">
+                                <ul class="blocks-list">
+                                    <li class="blocks-item">
+                                        {{#each articles}}
+                                            {{#if promoted}}
+                                                <a href="{{ url }}" class="blocks-item-link">
+                                            {{/if}}
+                                        {{/each}}
+                                            <span class="blocks-item-title"> {{ name }} </span>
+                                            <span class="blocks-item-description">
+                                                {{#each articles}}
+                                                    {{#if promoted}}
+                                                        {{ title }}
+                                                    {{/if}}
+                                                {{/each}}
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        {{/is}}
                     {{/each}}
                 {{/each}}
-            </ul>
-
-            --}}
+            {{/each}}
+            {{ pagination}}
+        </ul>
 
             {{!BVA }}
 
@@ -85,7 +92,7 @@
                                                 <a href="{{ url }}" class="blocks-item-link">
                                             {{/if}}
                                         {{/each}}
-                                            <span> {{ name }} </span>
+                                            <span class="blocks-item-title"> {{ name }} </span>
                                             <span class="blocks-item-description">
                                                 {{#each articles}}
                                                     {{#if promoted}}
@@ -147,7 +154,7 @@
                                                 <a href="{{ url }}" class="blocks-item-link">
                                             {{/if}}
                                         {{/each}}
-                                            <span> {{ name }} </span>
+                                            <span class="blocks-item-title"> {{ name }} </span>
                                             <span class="blocks-item-description">
                                                 {{#each articles}}
                                                     {{#if promoted}}
