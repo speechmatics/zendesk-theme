@@ -76,23 +76,34 @@
                 {{#each sections}}
                     {{#each sections}}
                         {{#is id 7251702265873}}
-                            {{ name }}
-                            {{#each articles}}
-                                {{#if promoted}}
-                                    <ul class="article-list promoted-articles">
-                                        <li class="promoted-articles-item">
-                                            <a href="{{ url }}">
-                                                {{ title }}
+                            <section class="categories blocks">
+                                <ul class="blocks-list">
+                                    <li class="blocks-item">
+                                        <a href='{{ url }}' class="blocks-item-link">
+                                            <span class="blocks-item-title">{{ name }}</span>
+                                            {{#each articles}}
+                                                {{#if promoted}}
+                                                    <ul class="article-list promoted-articles">
+                                                        <li class="promoted-articles-item">
+                                                            <a href="{{ url }}">
+                                                                {{ title }}
 
+                                                            </a>
+                                                        </li>
+                                                    {{/if}}
+                                                {{/each}}
                                             </a>
                                         </li>
-                                    {{/if}}
-                                {{/each}}
+                                    </ul>
+                                </section>
                             {{/is}}
                         {{/each}}
                     {{/each}}
                 {{/each}}
             </ul>
+
+
+
 
             {{!--BC 
 
