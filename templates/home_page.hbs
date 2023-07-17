@@ -49,34 +49,37 @@
 
             {{#each categories}}
                 {{#each sections}}
-                    {{#each sections}}
-                        {{#is id 7251718438289}}
-                            <section class="categories blocks">
-                                <ul class="blocks-list">
+                    <section class="categories blocks">
+                        <ul class="blocks-list">
+                            {{#each sections}}
+                                {{#is id 7251718438289}}
                                     <li class="blocks-item">
                                         {{#each articles}}
                                             {{#if promoted}}
                                                 <a href="{{ url }}" class="blocks-item-link">
-                                            {{/if}}
-                                        {{/each}}
-                                            <span class="blocks-item-title"> {{ name }} </span>
+                                                {{/if}}
+                                            {{/each}}
+                                            <span class="blocks-item-title">
+                                                <h2> {{ name }} </h2>
+                                            </span>
                                             <span class="blocks-item-description">
                                                 {{#each articles}}
                                                     {{#if promoted}}
-                                                        {{ title }}
+                                                        <h3> {{ title }} </h3>
                                                     {{/if}}
                                                 {{/each}}
                                             </span>
                                         </a>
                                     </li>
-                                </ul>
-                            </section>
-                        {{/is}}
+                                {{/is}}
+                            </ul>
+                        </section>
                     {{/each}}
                 {{/each}}
             {{/each}}
-            {{ pagination}}
-        </ul>
+
+
+
 
             {{!BVA }}
 
@@ -108,8 +111,6 @@
                     {{/each}}
                 {{/each}}
             {{/each}}
-            {{ pagination}}
-        </ul>
 
 
 
@@ -170,8 +171,6 @@
                     {{/each}}
                 {{/each}}
             {{/each}}
-            {{ pagination}}
-        </ul>
 
             {{!--LiD
 
