@@ -398,6 +398,7 @@ ul {
     padding: 5px;
     background: $background_color;
     border: 1px solid #d0d5dd;
+    margin-right: 10px;
 }
 
 .button-large, input[type=submit] {
@@ -751,8 +752,8 @@ ul {
   padding: 0 0 0 20px;
 }
 .nav-wrapper-desktop a:hover, .nav-wrapper-desktop a:focus, .nav-wrapper-desktop a:active {
-  background-color: transparent;
-  color: $link_color;
+  background-color: #f9fafb;
+  color: #344054;
   text-decoration: none;
 }
 
@@ -898,22 +899,25 @@ ul {
 @media (min-width: 768px) {
   .user-info .dropdown-toggle::after {
     display: inline-block;
+    
   }
 }
 .user-info > button {
   border: 0;
-  color: $link_color;
+  color: $text_color;
   min-width: 0;
   padding: 0;
   white-space: nowrap;
+  
 }
 .user-info > button:hover, .user-info > button:focus {
-  color: $link_color;
-  background-color: transparent;
+  color: $text_color;
+  
 }
 .user-info > button::after {
   color: $link_color;
   padding-right: 15px;
+  
 }
 [dir=rtl] .user-info > button::after {
   padding-left: 15px;
@@ -1365,6 +1369,17 @@ footer ul {
   margin-top: 10px;
 }
 
+/***** CSS Modifications for Category Images *****/
+.categories .blocks-item-link {
+  display: flex;
+  align-items: center;
+}
+
+.blocks-item img, .category-page-images, .section-page-images {
+  margin-bottom: 35px;
+  width: 35px;
+  height: 35px;
+}
 /***** Homepage *****/
 .section {
   margin-bottom: 40px;
@@ -4610,10 +4625,20 @@ html[dir=rtl] .notification-left-aligned {
   padding: 0;
   text-align: initial;
   vertical-align: middle;
+
 }
 .dropdown-toggle:hover {
   text-decoration: none;
+  
 }
+
+.dropdown-toggle:hover .dropdown-chevron-icon {
+  rotate: 180deg;
+ 
+}
+
+
+
 .dropdown-toggle > * {
   display: inline-block;
 }
@@ -4708,6 +4733,9 @@ html[dir=rtl] .notification-left-aligned {
 
 .dropdown-chevron-icon {
   vertical-align: middle;
+  color: #344054;
+  width:20px;
+  height:20px;
 }
 
 .content-tags > p {
