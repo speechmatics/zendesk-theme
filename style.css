@@ -298,6 +298,7 @@ textarea:focus {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
+  text-align: center;
 }
 @media (min-width: 1160px) {
   .container {
@@ -1400,6 +1401,12 @@ footer ul {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+.articles {
+  margin: auto;
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
   .promoted-articles {
     flex-direction: row;
@@ -1407,6 +1414,7 @@ footer ul {
 }
 .promoted-articles-item {
   flex: 1 0 auto;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   .promoted-articles-item {
