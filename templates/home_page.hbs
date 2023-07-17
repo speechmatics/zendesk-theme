@@ -24,25 +24,26 @@ Our <a href="https://status.speechmatics.com">status page</a> is now live! This 
                 {{#each categories}}
                     {{#if ../has_multiple_categories}}
                         <li class="blocks-item">
-                            <a href='{{url}}' class="blocks-item-link">
-                                {{#is id 7251709213329}}<img class="" src="{{asset 'downloads.png'}}"/>
-                                    {{/is}}
-                                 {{#is id 4419675487889}}<img class="" src="{{asset 'questions.png'}}"/>
-                                    {{/is}}
-                                <span class="blocks-item-title"> 
-                                    
-                                  <h2> {{name}}</h2> 
+                            <a href='{{ url }}' class="blocks-item-link">
+                                {{#is id 7251709213329}}<img class="" src="{{ asset 'downloads.png' }}"/>
+                                {{/is}}
+                                {{#is id 4419675487889}}<img class="" src="{{ asset 'questions.png' }}"/>
+                                {{/is}}
+                                <span class="blocks-item-title">
+
+                                    <h2>
+                                        {{ name }}</h2>
                                 </span>
-                                <span class="blocks-item-description">{{excerpt description}}</span>
+                                <span class="blocks-item-description">{{ excerpt description }}</span>
                             </a>
                         </li>
                     {{ else }}
                         {{#each sections}}
                             <li class="blocks-item">
-                                <a href='{{url}}' class="blocks-item-link">
-                                    
+                                <a href='{{ url }}' class="blocks-item-link">
+
                                     <span class="blocks-item-title">
-                                      {{name}}
+                                        {{ name }}
                                     </span>
                                     <span class="blocks-item-description">{{ excerpt description }}</span>
                                 </a>
@@ -52,190 +53,211 @@ Our <a href="https://status.speechmatics.com">status page</a> is now live! This 
                 {{/each}}
             </ul>
             {{ pagination }}
-        </section>
 
-        <section class="articles">
             <h1>{{ 'New Releases' }}</h1>
 
-            {{!RTVA}}
+            {{!BVA}}
 
-            {{#each categories}}
-                {{#each sections}}
-                    <section class="categories blocks">
-                        <ul class="blocks-list">
-                            {{#each sections}}
-                                {{#is id 7251718438289}}
-                                    <li class="blocks-item">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <a href="{{ url }}" class="blocks-item-link">
+            <ul class="blocks-list">
+
+                {{#each categories}}
+                    {{#each sections}}
+                        {{#each sections}}
+                            {{#is id 7251702265873}}
+                                <li class="blocks-item">
+                                    {{#each articles}}
+                                        {{#if promoted}}
+                                            <a href="{{ url }}" class="blocks-item-link">
+                                            {{/if}}
+                                        {{/each}}
+                                        <span class="blocks-item-title">
+                                            <h2>
+                                                {{ name }}
+                                            </h2>
+                                        </span>
+                                        <span class="blocks-item-description">
+                                            {{#each articles}}
+                                                {{#if promoted}}
+                                                    <h3>
+                                                        {{ title }}
+                                                    </h3>
                                                 {{/if}}
                                             {{/each}}
-                                            <span class="blocks-item-title">
-                                                <h2> {{ name }} </h2>
-                                            </span>
-                                            <span class="blocks-item-description">
-                                                {{#each articles}}
-                                                    {{#if promoted}}
-                                                        <h3> {{ title }} </h3>
-                                                    {{/if}}
-                                                {{/each}}
-                                            </span>
-                                        </a>
-                                    </li>
-                                {{/is}}
-                            </ul>
-                        </section>
+                                        </span>
+                                    </a>
+                                </li>
+                            {{/is}}
+                        {{/each}}
                     {{/each}}
                 {{/each}}
-            {{/each}}
 
+                {{!RTVA}}
 
-
-
-            {{!BVA }}
-
-            {{#each categories}}
-                {{#each sections}}
+                {{#each categories}}
                     {{#each sections}}
-                        {{#is id 7251702265873}}
-                            <section class="categories blocks">
-                                <ul class="blocks-list">
-                                    <li class="blocks-item">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <a href="{{ url }}" class="blocks-item-link">
+                        {{#each sections}}
+                            {{#is id 7251718438289}}
+                                <li class="blocks-item">
+                                    {{#each articles}}
+                                        {{#if promoted}}
+                                            <a href="{{ url }}" class="blocks-item-link">
                                             {{/if}}
                                         {{/each}}
-                                            <span class="blocks-item-title"> {{ name }} </span>
-                                            <span class="blocks-item-description">
-                                                {{#each articles}}
-                                                    {{#if promoted}}
+                                        <span class="blocks-item-title">
+                                            <h2>
+                                                {{ name }}
+                                            </h2>
+                                        </span>
+                                        <span class="blocks-item-description">
+                                            {{#each articles}}
+                                                {{#if promoted}}
+                                                    <h3>
                                                         {{ title }}
-                                                    {{/if}}
-                                                {{/each}}
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
-                        {{/is}}
-                    {{/each}}
-                {{/each}}
-            {{/each}}
-
-
-
-
-            {{!--BC 
-
-            {{#each categories}}
-                {{#each sections}}
-                    {{#each sections}}
-                        {{#is id 7251686780049}}
-                            {{ name }}
-                            {{#each articles}}
-                                {{#if promoted}}
-                                    <ul class="article-list promoted-articles">
-                                        <li class="promoted-articles-item">
-                                            <a href="{{ url }}">
-                                                {{ title }}
-
-                                            </a>
-                                        </li>
-                                    {{/if}}
-                                {{/each}}
+                                                    </h3>
+                                                {{/if}}
+                                            {{/each}}
+                                        </span>
+                                    </a>
+                                </li>
                             {{/is}}
                         {{/each}}
                     {{/each}}
                 {{/each}}
-            </ul>
 
-            --}}
+                {{!BC}}
 
-            {{!RTC }}
-
-            {{#each categories}}
-                {{#each sections}}
+                {{#each categories}}
                     {{#each sections}}
-                        {{#is id 7251718480785}}
-                            <section class="categories blocks">
-                                <ul class="blocks-list">
-                                    <li class="blocks-item">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <a href="{{ url }}" class="blocks-item-link">
+                        {{#each sections}}
+                            {{#is id 7251686780049}}
+                                <li class="blocks-item">
+                                    {{#each articles}}
+                                        {{#if promoted}}
+                                            <a href="{{ url }}" class="blocks-item-link">
                                             {{/if}}
                                         {{/each}}
-                                            <span class="blocks-item-title"> {{ name }} </span>
-                                            <span class="blocks-item-description">
-                                                {{#each articles}}
-                                                    {{#if promoted}}
+                                        <span class="blocks-item-title">
+                                            <h2>
+                                                {{ name }}
+                                            </h2>
+                                        </span>
+                                        <span class="blocks-item-description">
+                                            {{#each articles}}
+                                                {{#if promoted}}
+                                                    <h3>
                                                         {{ title }}
-                                                    {{/if}}
-                                                {{/each}}
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
-                        {{/is}}
-                    {{/each}}
-                {{/each}}
-            {{/each}}
-
-            {{!--LiD
-
-            {{#each categories}}
-                {{#each sections}}
-                    {{#each sections}}
-                        {{#is id 7402921292049}}
-                            {{ name }}
-                            {{#each articles}}
-                                {{#if promoted}}
-                                    <ul class="article-list promoted-articles">
-                                        <li class="promoted-articles-item">
-                                            <a href="{{ url }}">
-                                                {{ title }}
-
-                                            </a>
-                                        </li>
-                                    {{/if}}
-                                {{/each}}
+                                                    </h3>
+                                                {{/if}}
+                                            {{/each}}
+                                        </span>
+                                    </a>
+                                </li>
                             {{/is}}
                         {{/each}}
                     {{/each}}
                 {{/each}}
-            </ul>
 
-            --}}
+                {{!RTC}}
 
-            {{!--GPU Inference
-
-            {{#each categories}}
-                {{#each sections}}
+                {{#each categories}}
                     {{#each sections}}
-                        {{#is id 14280571789329}}
-                            {{ name }}
-                            {{#each articles}}
-                                {{#if promoted}}
-                                    <ul class="article-list promoted-articles">
-                                        <li class="promoted-articles-item">
-                                            <a href="{{ url }}">
-                                                {{ title }}
-
-                                            </a>
-                                        </li>
-                                    {{/if}}
-                                {{/each}}
+                        {{#each sections}}
+                            {{#is id 7251718480785}}
+                                <li class="blocks-item">
+                                    {{#each articles}}
+                                        {{#if promoted}}
+                                            <a href="{{ url }}" class="blocks-item-link">
+                                            {{/if}}
+                                        {{/each}}
+                                        <span class="blocks-item-title">
+                                            <h2>
+                                                {{ name }}
+                                            </h2>
+                                        </span>
+                                        <span class="blocks-item-description">
+                                            {{#each articles}}
+                                                {{#if promoted}}
+                                                    <h3>
+                                                        {{ title }}
+                                                    </h3>
+                                                {{/if}}
+                                            {{/each}}
+                                        </span>
+                                    </a>
+                                </li>
                             {{/is}}
                         {{/each}}
                     {{/each}}
                 {{/each}}
+
+
+                {{!GPU Inference Container}}
+
+                {{#each categories}}
+                    {{#each sections}}
+                        {{#each sections}}
+                            {{#is id 14280571789329}}
+                                <li class="blocks-item">
+                                    {{#each articles}}
+                                        {{#if promoted}}
+                                            <a href="{{ url }}" class="blocks-item-link">
+                                            {{/if}}
+                                        {{/each}}
+                                        <span class="blocks-item-title">
+                                            <h2>
+                                                {{ name }}
+                                            </h2>
+                                        </span>
+                                        <span class="blocks-item-description">
+                                            {{#each articles}}
+                                                {{#if promoted}}
+                                                    <h3>
+                                                        {{ title }}
+                                                    </h3>
+                                                {{/if}}
+                                            {{/each}}
+                                        </span>
+                                    </a>
+                                </li>
+                            {{/is}}
+                        {{/each}}
+                    {{/each}}
+                {{/each}}
+
+                {{!LiD}}
+
+                {{#each categories}}
+                    {{#each sections}}
+                        {{#each sections}}
+                            {{#is id 7402921292049}}
+                                <li class="blocks-item">
+                                    {{#each articles}}
+                                        {{#if promoted}}
+                                            <a href="{{ url }}" class="blocks-item-link">
+                                            {{/if}}
+                                        {{/each}}
+                                        <span class="blocks-item-title">
+                                            <h2>
+                                                {{ name }}
+                                            </h2>
+                                        </span>
+                                        <span class="blocks-item-description">
+                                            {{#each articles}}
+                                                {{#if promoted}}
+                                                    <h3>
+                                                        {{ title }}
+                                                    </h3>
+                                                {{/if}}
+                                            {{/each}}
+                                        </span>
+                                    </a>
+                                </li>
+                            {{/is}}
+                        {{/each}}
+                    {{/each}}
+                {{/each}}
+
             </ul>
-
-            --}}
-
         </section>
     </section>
 
