@@ -2019,6 +2019,7 @@ footer ul {
 .article table {
   border-radius: 20px;
   border-color: #d0d5dd;
+  text-align: left;
 }
 
 .article tr {
