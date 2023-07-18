@@ -500,12 +500,11 @@ ul {
 }
 
 /***** Tables *****/
-.table {
+table {
   width: 100%;
   table-layout: fixed;
-  border-collapse: collapse;
-  border-spacing: 0;
 }
+
 @media (min-width: 768px) {
   .table {
     table-layout: auto;
@@ -513,7 +512,6 @@ ul {
 }
 .table th,
 .table th a {
-  color: lighten($text_color, 20%);
   font-size: 13px;
   text-align: left;
 }
@@ -522,7 +520,7 @@ ul {
   text-align: right;
 }
 .table tr {
-  border-bottom: 1px solid #ddd;
+  /*border-bottom: 1px solid magenta;*/
   display: block;
   padding: 20px 0;
 }
@@ -533,6 +531,7 @@ ul {
 }
 .table td {
   display: block;
+  
 }
 @media (min-width: 768px) {
   .table td {
@@ -1791,6 +1790,7 @@ footer ul {
 }
 .article-body {
   display: flow-root;
+
 }
 .article-body a {
   color: $link_color;
@@ -2008,11 +2008,53 @@ footer ul {
 .article td > p:first-child,
 .article th > p:first-child {
   margin-top: 0;
+  
 }
 .article td > p:last-child,
 .article th > p:last-child {
   margin-bottom: 0;
+  
 }
+
+.article table {
+  border-radius: 20px;
+  border-color: #d0d5dd;
+     
+}
+
+.article tr {
+  border: transparent;
+    
+}
+
+
+
+.article tr:nth-child(odd) {
+  background-color: $brand_color;
+  }
+
+  tr:first-child td:first-child {
+    border-top-left-radius: 20px;
+  
+  }
+  
+  tr:first-child td:last-child {
+    border-top-right-radius: 20px;
+    
+  
+  }
+  
+  tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+  
+  }
+  
+  tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+  
+  }
+
+
 
 .sidenav-title {
   font-size: 15px;
