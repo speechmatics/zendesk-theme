@@ -16,7 +16,7 @@
       <header class="page-header">
         <h1>{{section.name}}</h1>
         {{#if settings.show_follow_section}}
-          <div class="section-subscribe">{{subscribe}}</div>
+          <div>{{subscribe}}</div>
         {{/if}}
         {{#if section.description}}
           <p class="page-header-description">{{section.description}}</p>
@@ -61,7 +61,7 @@
         </ul>
       {{else}}
         <i class="section-empty">
-          <a href="{{section.url}}">{{t 'empty'}}</a>
+          <a href="{{section.url}}">{{t ''}}</a>
         </i>
       {{/if}}
 
