@@ -2019,12 +2019,14 @@ footer ul {
 .article table {
   border-radius: 20px;
   border-color: #d0d5dd;
-     
 }
 
 .article tr {
-  border: transparent;
-    
+  border: transparent; 
+}
+
+.article th, td {
+  padding: 10px;
 }
 
 .article tr:nth-child(odd) {
