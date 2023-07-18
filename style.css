@@ -11,6 +11,7 @@ html {
 
 body {
   margin: 0;
+  
 }
 
 main {
@@ -104,7 +105,21 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-family: Inter, sans-serif;
+  -webkit-box-align: center;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s, background 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s, border 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s;
+  font-size: 8px;
+  /*line-height: 10px;
+  padding: 0px 20px 55px 5px;*/
+  background: $background_color;
+  border: 1px solid #d0d5dd;
+  margin: 5px;
 }
 
 button::-moz-focus-inner,
@@ -345,11 +360,11 @@ ul {
 }
 
 /***** Buttons *****/
-.button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link, .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button {
+.button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .split-button button {
   background-color: transparent;
-  border: 1px solid $brand_color;
+  border: 1px solid $brand_text_color;
   border-radius: 4px;
-  color: $brand_color;
+  color: $brand_text_color;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
@@ -394,12 +409,13 @@ ul {
     cursor: pointer;
     transition: color 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s, background 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s, border 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s;
     font-size: 8px;
-    /*line-height: 10px;*/
-    padding: 5px;
+    /*line-height: 10px;
+    padding: 0px 20px 55px 5px;*/
     background: $background_color;
     border: 1px solid #d0d5dd;
-    margin-right: 10px;
+    margin: 5px;
 }
+
 
 .button-large, input[type=submit] {
   cursor: pointer;
@@ -712,6 +728,7 @@ ul {
 .user-nav-list {
   display: block;
   list-style: none;
+
   
 }
 .user-nav-list > li {
@@ -739,10 +756,11 @@ ul {
   color: #344054;
   display: none;
   font-size: 14px;
-  padding: 8px;
+  padding: 10px 15px;
   width: auto;
   text-align:center;
 }
+
 @media (min-width: 768px) {
   .nav-wrapper-desktop a {
     display: inline-block;
@@ -852,6 +870,21 @@ ul {
 [dir=rtl] .nav-wrapper-mobile .menu-list-mobile-items .menu-profile-avatar {
   margin-right: 0;
   margin-left: 8px;
+}
+
+.news-banner {
+  border-radius: 100px;
+  background: #f9fafb;
+  display: flex;
+  
+  list-style: none;
+  padding: 5px;
+  border: 1px solid #a5a1b2;
+  width:fit-content;
+  font-size:small;
+  height: 35px;
+  align-items:center;
+  
 }
 
 .skip-navigation {
@@ -1297,6 +1330,7 @@ footer ul {
   justify-content: flex-start;
   list-style: none;
   padding: 0;
+
 }
 @media (min-width: 768px) {
   .blocks-list {

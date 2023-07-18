@@ -10,10 +10,12 @@
     {{/link}}
   </div>
 
+<div>
   <div class="nav-wrapper-desktop">
     <nav class="user-nav" id="user-nav">
       <ul class="user-nav-list">
         <!--<li>{{link 'community'}}</li>-->
+        <a href="http://status.speechmatics.com" target="_blank" class='request-button' >Status Page</a>
         <li>{{#link 'new_request' class='request-button'}}Submit a Request {{/link}}</li>
         {{#unless signed_in}}
           <li>
@@ -41,11 +43,12 @@
           {{#link "contributions" role="menuitem"}}{{t "activities"}}{{/link}}
           {{contact_details role="menuitem"}}
           {{change_password role="menuitem"}}
-          <div class="separator" role="separator"></div>
+          <!--<div class="separator" role="separator"></div>-->
           {{link "sign_out" role="menuitem"}}
         </div>
       </div>
     {{/if}}
+        
   </div>
 
   <div class="nav-wrapper-mobile">
