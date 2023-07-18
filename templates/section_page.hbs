@@ -16,21 +16,26 @@
       <header class="page-header">
         <h1>{{section.name}}</h1>
 
-        {{#if section.description}}
-          <p class="page-header-description">{{section.description}}</p>
-        {{/if}}
+        
       </header>
 
+      {{#if settings.show_follow_section}}
+        <div style="font-size:12px; margin-bottom:10px;">{{subscribe}}</div>
+          
+        {{/if}}
+
       {{#if section.sections}}
-        <ul class="section-list">
-          {{#if settings.show_follow_section}}
-            <div style="font-size:12px;">{{subscribe}}</div>
-          {{/if}}
+        <ul class="blocks-list">
+          
           {{#each section.sections}}
-          <li class="section-list-item">
-              <a href="{{url}}">
-                <span>{{name}}</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" aria-hidden="true">
+          <li class="blocks-item">
+              <a href="{{url}}" class="blocks-item-link">
+                 {{#is id 7251702265873}}<img class="section-page-images" src="{{asset 'movie.png'}}" style="margin:auto" />
+                               {{/is}}
+                 {{#is id 7251718438289}}<img class="section-page-images" src="{{asset 'microphone.png'}}" style="margin:auto"/>
+                               {{/is}}
+                <span class="blocks-item-title"><h2>{{name}}</h2></span>
+                <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" aria-hidden="true">-->
                   <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 14.5l6.1-6.1c.2-.2.2-.5 0-.7L5 1.5"/>
                 </svg>
               </a>
@@ -42,9 +47,8 @@
       {{pagination "section.sections"}}
 
       {{#if section.articles}}
-        {{#if settings.show_follow_section}}
-          <div style="font-size:12px;">{{subscribe}}</div>
-        {{/if}}
+      
+          
         <ul class="article-list">
           {{#each section.articles}}
             <li class="article-list-item {{#if promoted}} article-promoted{{/if}}">
