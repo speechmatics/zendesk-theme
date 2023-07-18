@@ -18,13 +18,13 @@
         {{#if section.description}}
           <p class="page-header-description">{{section.description}}</p>
         {{/if}}
-        {{#if settings.show_follow_section}}
-          <div>{{subscribe}}</div>
-        {{/if}}
       </header>
 
       {{#if section.sections}}
         <ul class="section-list">
+          {{#if settings.show_follow_section}}
+            <div>{{subscribe}}</div>
+          {{/if}}
           {{#each section.sections}}
           <li class="section-list-item">
               <a href="{{url}}">
@@ -41,6 +41,9 @@
       {{pagination "section.sections"}}
 
       {{#if section.articles}}
+        {{#if settings.show_follow_section}}
+          <div>{{subscribe}}</div>
+        {{/if}}
         <ul class="article-list">
           {{#each section.articles}}
             <li class="article-list-item {{#if promoted}} article-promoted{{/if}}">
