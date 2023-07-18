@@ -2027,8 +2027,6 @@ footer ul {
     
 }
 
-
-
 .article tr:nth-child(odd) {
   background-color: $brand_color;
   }
