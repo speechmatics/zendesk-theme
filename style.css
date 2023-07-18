@@ -872,13 +872,13 @@ table {
 
 .news-banner {
   border-radius: 100px;
-  background: #f9fafb;
+  background: $brand_color;
   display: flex;
   margin: auto;
   margin-bottom: 10px;
   list-style: none;
   padding: 5px;
-  border: 1px solid #a5a1b2;
+  border: 1px solid $button_border_color;
   width:fit-content;
   font-size:small;
   height: 20px;
@@ -1338,7 +1338,7 @@ footer ul {
   }
 }
 .blocks-item {
-  border: 1px solid $text_color;
+  border: 1px solid $blocks_item_border_color;
   border-radius: 0.5rem;
   box-sizing: border-box;
   color: $text_color;
@@ -2019,7 +2019,7 @@ footer ul {
 .article table {
   border-radius: 20px;
   text-align: left;
-  border: 1px solid #d0d5dd
+  border: 1px solid $button_border_color;
 }
 
 .article tr {
