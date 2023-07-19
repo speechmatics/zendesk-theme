@@ -2047,11 +2047,13 @@ footer ul {
   display: block;
   margin-top: 10px;
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .recent-articles li,
 .related-articles li {
   margin-bottom: 15px;
+  text-align: left;
 }
 
 /***** Attachments *****/
@@ -2121,7 +2123,7 @@ footer ul {
 .related-articles-title {
   margin-bottom: 5px;
   margin-top: 0;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
 }
 .comment-overview {
