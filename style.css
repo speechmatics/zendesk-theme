@@ -751,7 +751,7 @@ table {
 }
 .nav-wrapper-desktop a {
   /*border: 0;*/
-  color: #344054;
+  color: $text_color;
   display: none;
   font-size: 14px;
   padding: 10px 15px;
@@ -872,13 +872,13 @@ table {
 
 .news-banner {
   border-radius: 100px;
-  background: #f9fafb;
+  background: $brand_color;
   display: flex;
   margin: auto;
   margin-bottom: 10px;
   list-style: none;
   padding: 5px;
-  border: 1px solid #a5a1b2;
+  border: 1px solid $button_border_color;
   width:fit-content;
   font-size:small;
   height: 20px;
@@ -1003,7 +1003,7 @@ table {
 
 /***** Footer *****/
 footer {
-  border-top: 1px solid var(--sm-code-border-colour);
+  border-top: 1px solid;
   font-size: .9rem;
   font-family: 'Inter', sans-serif;
   line-height: 1.7rem;
@@ -1019,8 +1019,6 @@ footer ul {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  max-width: calc(1.5 * var(--sm-max-width));
-  margin-top: calc(3 * var(--ifm-spacing-vertical));
 }
 
 .footer-nav div {
@@ -1028,12 +1026,12 @@ footer ul {
 }
 
 .footer-baseline {
-  background-color: #273243;
+  background-color: $footer_background_color;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  color:#fff;
+  color: $brand_color;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 20%;
@@ -1052,30 +1050,9 @@ footer ul {
   
 }
 
-.footer-baseline > div {
-  max-width: calc(1.5 * var(--sm-max-width));
-}
-
-.footer-baseline ul {
-  list-style: none;
-  
-  /*gap: calc(0.5 * var(--ifm-global-spacing));
-  margin: 0;*/
-}
-
 .legal-links ul {
   gap: 12px;
 }
-
-.footer-baseline a,
-.footer-baseline span {
-  color: var(--ifm-background-color);
-  font-family: 'Inter', sans-serif;
-}
-
-
-
-
 
 /***** Breadcrumbs *****/
 .breadcrumbs {
@@ -1338,7 +1315,7 @@ footer ul {
   }
 }
 .blocks-item {
-  border: 1px solid $text_color;
+  border: 1px solid $blocks_item_border_color;
   border-radius: 0.5rem;
   box-sizing: border-box;
   color: $text_color;
@@ -2018,43 +1995,37 @@ footer ul {
 
 .article table {
   border-radius: 20px;
-  border-color: #d0d5dd;
-     
+  text-align: left;
+  border: 1px solid $button_border_color;
 }
 
 .article tr {
-  border: transparent;
-    
+  border: transparent; 
 }
 
-
+.article th, td {
+  padding: 10px;
+}
 
 .article tr:nth-child(odd) {
   background-color: $brand_color;
   }
 
   tr:first-child td:first-child {
-    border-top-left-radius: 20px;
-  
+    border-top-left-radius: 20px; 
   }
   
   tr:first-child td:last-child {
     border-top-right-radius: 20px;
-    
-  
   }
   
   tr:last-child td:first-child {
-    border-bottom-left-radius: 20px;
-  
+    border-bottom-left-radius: 20px; 
   }
   
   tr:last-child td:last-child {
-    border-bottom-right-radius: 20px;
-  
+    border-bottom-right-radius: 20px; 
   }
-
-
 
 .sidenav-title {
   font-size: 15px;

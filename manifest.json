@@ -56,6 +56,24 @@
           "description": "background_color_description",
           "label": "background_color_label",
           "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "button_border_color",
+          "type": "color",
+          "description": "border_color_description",
+          "value": "rgb(208,213,221)"
+        },
+        {
+          "identifier": "blocks_item_border_color",
+          "type": "color",
+          "description": "blocks_item_border_color_description",
+          "value": "rgb(102,112,133)"
+        },
+        {
+          "identifier": "footer_background_color",
+          "type": "color",
+          "description": "footer_color_description",
+          "value": "rgb(39,50,67)"
         }
       ]
     },
