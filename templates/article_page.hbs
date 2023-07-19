@@ -38,6 +38,7 @@
               <a href="{{section.url}}" class="article-sidebar-item">{{t 'see_more'}}</a>
             {{/if}}
           </div>
+          {{related_articles}}
         </div>
       {{/if}}
     </aside>
@@ -54,7 +55,7 @@
           {{/if}}
         </h1>
 
-        <div class="article-author">
+        <!--<div class="article-author">
           {{#if settings.show_article_author}}
             <div class="avatar article-avatar">
               {{#if article.author.agent}}
@@ -85,7 +86,7 @@
 
         {{#if settings.show_follow_article}}
           <div class="article-subscribe">{{subscribe}}</div>
-        {{/if}}
+        {{/if}}-->
       </header>
 
       <section class="article-info">
@@ -172,14 +173,14 @@
         </div>
       </footer>
 
-      <div class="article-relatives">
+     <!-- <div class="article-relatives">
         {{#if settings.show_recently_viewed_articles}}
           {{recent_articles}}
         {{/if}}
         {{#if settings.show_related_articles}}
           {{related_articles}}
         {{/if}}
-      </div>
+      </div>-->
       {{#if settings.show_article_comments}}
         <div class="article-comments" id="article-comments">
           <section class="comments">
