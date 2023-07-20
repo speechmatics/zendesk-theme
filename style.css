@@ -1003,7 +1003,7 @@ table {
 
 /***** Footer *****/
 footer {
-  border-top: 1px solid;
+  
   font-size: .9rem;
   font-family: 'Inter', sans-serif;
   line-height: 1.7rem;
@@ -1082,7 +1082,9 @@ footer ul {
 
 /***** Search field *****/
 .search-container {
-  position: relative;
+  position: absolute;
+  right: 215px;
+  
 }
 
 .search {
@@ -1360,6 +1362,7 @@ footer ul {
   justify-content: center;
   border-radius: inherit;
 }
+
 
 .blocks-article-item-link {
   color: $text_color;
@@ -2050,11 +2053,13 @@ footer ul {
   display: block;
   margin-top: 10px;
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .recent-articles li,
 .related-articles li {
   margin-bottom: 15px;
+  text-align: left;
 }
 
 /***** Attachments *****/
@@ -2124,7 +2129,7 @@ footer ul {
 .related-articles-title {
   margin-bottom: 5px;
   margin-top: 0;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
 }
 .comment-overview {
