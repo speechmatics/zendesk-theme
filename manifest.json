@@ -67,11 +67,11 @@
           "type": "list",
           "description": "heading_font_description",
           "label": "heading_font_label",
-          "value": "'Inter', Inter",
+          "value": "'Inter', sans-serif",
           "options": [
             {
               "label": "Inter",
-              "value": "Inter, Inter"
+              "value": "Inter, sans-serif"
             },
             {
               "label": "System",
