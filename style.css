@@ -1363,13 +1363,15 @@ footer ul {
 
 .blocks-article-item-link {
   color: $text_color;
-  margin-top: 15px;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
   flex: 1;
   justify-content: center;
   border-radius: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  color: inherit;
 }
 
 .blocks-item-link:visited, .blocks-item-link:hover, .blocks-item-link:active {
