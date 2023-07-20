@@ -2,11 +2,7 @@
 /***** Normalize.css *****/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-.my-element {
-  font-family: 'Inter', sans-serif;
-}  
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); 
 
 html {
   line-height: 1.15;
@@ -23,6 +19,7 @@ main {
 }
 
 h1 {
+  font-family: 'Inter', sans-serif;
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -237,15 +234,18 @@ h1 {
 }
 
 h2 {
+  font-family: $heading_font;
   font-size: 22px;
 }
 
 h3 {
+  font-family: $heading_font;
   font-size: 18px;
   font-weight: 600;
 }
 
 h4 {
+  font-family: $heading_font;
   font-size: 16px;
 }
 
