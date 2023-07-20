@@ -1082,7 +1082,9 @@ footer ul {
 
 /***** Search field *****/
 .search-container {
-  position: relative;
+  position: absolute;
+  right: 215px;
+  
 }
 
 .search {
