@@ -67,7 +67,7 @@
           "type": "list",
           "description": "heading_font_description",
           "label": "heading_font_label",
-          "value": "'Inter', Regular",
+          "value": "'Arial', Regular",
           "options": [
             {
               "label": "Inter",
