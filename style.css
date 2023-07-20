@@ -882,7 +882,7 @@ table {
   margin-bottom: 10px;
   list-style: none;
   padding: 5px;
-  border: 1px solid $button_border_color;
+  border: 1px solid $blocks_item_border_color;
   width:fit-content;
   font-size:small;
   height: 20px;
@@ -2017,7 +2017,7 @@ footer ul {
 .article table {
   border-radius: 20px;
   text-align: left;
-  border: 1px solid $button_border_color;
+  border: 1px solid $blocks_item_border_color;
 }
 
 .article tr {
