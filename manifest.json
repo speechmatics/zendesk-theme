@@ -56,6 +56,20 @@
           "description": "background_color_description",
           "label": "background_color_label",
           "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "blocks_item_border_color",
+          "type": "color",
+          "description": "background_color_description",
+          "label": "background_color_label",
+          "value": "rgba(208, 213, 221)"
+        },
+        {
+          "identifier": "footer_background_color",
+          "type": "color",
+          "description": "background_color_description",
+          "label": "background_color_label",
+          "value": "rgba(39, 50, 67)"
         }
       ]
     },
