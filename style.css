@@ -1362,17 +1362,6 @@ footer ul {
   justify-content: center;
   border-radius: inherit;
 }
-
-.blocks-article-item-link {
-  margin-top: 15px;
-  padding: 20px 30px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  border-radius: inherit;
-  color: $text_color;
-}
 .blocks-item-link:visited, .blocks-item-link:hover, .blocks-item-link:active {
   color: inherit;
   text-decoration: none;
