@@ -13,14 +13,14 @@
           "type": "color",
           "description": "background_color_description",
           "label": "blocks_item_border_color_label",
-          "value": "rgba(208, 213, 221)"
+          "value": "rgba(208, 213, 221, 1)"
         },
         {
           "identifier": "footer_background_color",
           "type": "color",
           "description": "background_color_description",
           "label": "footer_background_color_label",
-          "value": "rgba(39, 50, 67)"
+          "value": "rgba(39, 50, 67, 1)"
         },
         {
           "identifier": "brand_color",
