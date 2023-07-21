@@ -1422,12 +1422,18 @@ footer ul {
   }
 }
 
+.announcement-text {
+  text-color:magenta;
+}
+
 .home-section h2 {
   margin-bottom: 10px;
   text-align: center;
 }
 
 /***** Promoted articles *****/
+
+
 .promoted-articles {
   display: flex;
   flex-direction: column;
