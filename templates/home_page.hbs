@@ -3,12 +3,16 @@
 <div>
     
     <span class="news-banner">
-   <img class= "category-page-images" src="{{asset 'newspaper.png'}}" style="margin-bottom: 3px;" />
-   <p>Our new portal is currently under construction</p>
-
-    </span>
-   
+    <img class= "category-page-images" src="{{asset 'newspaper.png'}}" style="margin-bottom: 3px;" />
+    <object>
+        <div class="announcement-text" id="announcementContent"></div>
+    </object>
+    </span> 
 </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include the JavaScript file -->
+  <script src="{{asset 'announcements.js'}}"></script>
 
 <section id="main-content" class="section hero">
     <div class="hero-inner">
