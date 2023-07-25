@@ -568,9 +568,11 @@ table {
 
 .form-field label {
   display: block;
-  font-size: 13px;
+  font-size: 1em; /* Equivalent to h3 size */
+  font-weight: bold; /* Make the label bold */
   margin-bottom: 5px;
   width: 100%;
+  color: $text_color;
 }
 
 .form-field input {
