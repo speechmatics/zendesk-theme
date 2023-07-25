@@ -3739,6 +3739,7 @@ footer ul {
 .pagination {
   margin: 20px 0;
   text-align: center;
+  width: 150vmin;
 }
 .pagination-next, .pagination-prev, .pagination-first, .pagination-last {
   display: inline-block;
@@ -3787,6 +3788,9 @@ footer ul {
 }
 [dir=rtl] .pagination-prev-text {
   margin-right: 10px;
+}
+.pagination-prev-icon {
+  color: $text_color;
 }
 
 /***** Metadata *****/
