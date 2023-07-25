@@ -3759,11 +3759,15 @@ footer ul {
   width: 1px;
   white-space: nowrap;
 }
+.pagination-last-icon, .pagination-first-icon {
+  color: $text_color;
+}
 .pagination-next-link {
   padding-right: 10px;
 }
 .pagination-next-text {
   margin-right: 10px;
+  color: $text_color;
 }
 [dir=rtl] .pagination-next-link {
   padding-left: 10px;
@@ -3776,6 +3780,7 @@ footer ul {
 }
 .pagination-prev-text {
   margin-left: 10px;
+  color: $text_color;
 }
 [dir=rtl] .pagination-prev-link {
   padding-right: 10px;
