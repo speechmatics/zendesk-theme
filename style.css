@@ -4616,6 +4616,7 @@ footer ul {
   margin-top: 10px;
   margin-bottom: 0;
   word-break: break-word;
+  text-align: left;
 }
 
 /* By default use bold instead of italic to highlight */
