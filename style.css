@@ -764,7 +764,6 @@ table {
 }
 
 /* Custom CSS for the hover-over dropdown */
-/* Custom CSS for the hover-over dropdown */
 .dropdown-container {
   display: inline-block;
   position: relative;
@@ -786,10 +785,11 @@ table {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: calc(80%); /* Position the dropdown below the chevron */
+  transform: translateX(10%); /* Center the dropdown below the chevron */
   background-color: #f9f9f9;
   min-width: 160px;
+  width: 100%; /* Set the width to match the width of the .dropdown-container */
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
