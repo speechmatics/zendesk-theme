@@ -1165,16 +1165,15 @@ footer ul {
 
 .search {
   background-color: white;
-  border-color: #87929D;
+  border: 2px solid $blocks_item_border_color;
   border-radius: 30px;
   border-style: solid;
-  border-width: 1px;
   display: flex;
   position: relative;
   transition: border 0.12s ease-in-out;
 }
 .search:focus-within {
-  border-color: $brand_color;
+  border-color: 2px solid $blocks_item_border_color;
 }
 .search input[type=search],
 .search .clear-button {
