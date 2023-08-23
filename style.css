@@ -795,7 +795,7 @@ table {
 .dropdown-chevron-icon {
   margin-left: 5px;
   vertical-align: middle;
-  transition: transform 0.3s; /* Adding a transition for smooth animation */
+  transition: transform 0s; /* Adding a transition for smooth animation */
 }
 
 .dropdown-content {
@@ -819,6 +819,7 @@ table {
 /* Keep the chevron in place during the hover state */
 .dropdown-container:hover .dropdown-chevron-icon {
   transform: rotate(180deg);
+  transition:0s;
   /* Add any other styling you want for the chevron during hover */
 }
 
@@ -4782,15 +4783,12 @@ html[dir=rtl] .notification-left-aligned {
 }
 .dropdown-toggle:hover {
   text-decoration: none;
-  
 }
 
-.dropdown-toggle:hover .dropdown-chevron-icon {
+.dropdown-toggle:hover > .dropdown-chevron-icon {
   rotate: 180deg;
- 
+  transition: 0s;
 }
-
-
 
 .dropdown-toggle > * {
   display: inline-block;
