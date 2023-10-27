@@ -1128,6 +1128,10 @@ footer ul {
   
 }
 
+.legal-links a {
+  color: $background_color;
+}
+
 .legal-links ul {
   gap: 12px;
 }
