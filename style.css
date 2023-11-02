@@ -503,6 +503,12 @@ ul {
   border-bottom-left-radius: unset;
 }
 
+/*****Admonitions*****/
+
+.note {
+  colour:magenta;
+}
+
 /***** Tables *****/
 table {
   width: 100%;
