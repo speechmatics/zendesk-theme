@@ -1,7 +1,7 @@
 {
   "name": "Github Import",
   "author": "Zendesk",
-  "version": "3.1.3.5",
+  "version": "3.1.3.6",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -70,6 +70,48 @@
           "description": "background_color_description",
           "label": "background_color_label",
           "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "note_background_color",
+          "type": "color",
+          "description": "note_background_color_description",
+          "label": "note_background_color_label",
+          "value": "rgba(238, 249, 253, 1)"
+        },
+        {
+          "identifier": "note_left_border_color",
+          "type": "color",
+          "description": "note_left_border_color_description",
+          "label": "note_left_border_color_label",
+          "value": "rgba(76, 179, 212, 1)"
+        },
+        {
+          "identifier": "warning_background_color",
+          "type": "color",
+          "description": "warning_background_color_description",
+          "label": "warning_background_color_label",
+          "value": "rgba(255, 169, 0, 0.25)"
+        },
+        {
+          "identifier": "warning_left_border_color",
+          "type": "color",
+          "description": "warning_left_border_color_description",
+          "label": "warning_left_border_color_label",
+          "value": "rgba(255, 169, 0, 1)"
+        },
+        {
+          "identifier": "alert_background_color",
+          "type": "color",
+          "description": "alert_background_color_description",
+          "label": "alert_background_color_label",
+          "value": "rgba(255, 3, 3, 0.25)"
+        },
+        {
+          "identifier": "alert_left_border_color",
+          "type": "color",
+          "description": "alert_left_border_color_description",
+          "label": "alert_left_border_color_label",
+          "value": "rgba(255, 3, 3, 1)"
         }
       ]
     },
