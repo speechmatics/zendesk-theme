@@ -7,7 +7,7 @@
   "settings": [
     {
       "label": "colors_group_label",
-      "variables": [45
+      "variables": [
         {
           "identifier": "blocks_item_border_color",
           "type": "color",
