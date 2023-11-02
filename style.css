@@ -1442,6 +1442,18 @@ footer ul {
   padding: 0;
 
 }
+
+.blocks-list-faq {
+  /*display: flex;
+  /*flex-wrap: wrap;
+  justify-content: flex-start;*/
+  list-style: none;
+  padding: 0;
+
+}
+
+
+
 @media (min-width: 768px) {
   .blocks-list {
     margin: 0 -15px;
@@ -1495,6 +1507,7 @@ footer ul {
 }
 
 
+
 .blocks-article-item-link {
   color: $text_color;
   padding: 20px 30px;
@@ -1508,6 +1521,37 @@ footer ul {
   color: inherit;
 }
 
+.blocks-article-item-link-faq {
+  color: $text_color;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  border-radius: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  color: inherit;
+
+
+}
+div.blocks-article-item-link-faq {
+  border-right: 2px solid #1a0d2d;
+  border-width: 2px;
+  
+  vertical-align: middle;
+}
+
+h2.blocks-article-item-link-faq{
+text-decoration: double;
+}
+
+.containerTab {
+  text-align:left;
+  margin-top: auto;
+  padding-left:20px;
+  
+   }
 .blocks-item-link:visited, .blocks-item-link:hover, .blocks-item-link:active {
   color: inherit;
   text-decoration: none;
