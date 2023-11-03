@@ -270,9 +270,41 @@ If you don't find the answer you are looking for, you can raise a ticket with us
                     {{/each}}
                 {{/each}}
 
+                {{!GPU Translation Inference Container}}
+
+                {{#each categories}}
+                    {{#each sections}}
+                        {{#each sections}}
+                            {{#is id 17494315442193}}
+                                <li class="blocks-item">
+                                    {{#each articles}}
+                                        {{#if promoted}}
+                                            <a href="{{ url }}" class="blocks-item-link">
+                                            {{/if}}
+                                        {{/each}}
+                                        <span class="blocks-item-title"> <img class="section-page-images" src="{{asset 'translation.png'}}" style="margin:auto"/>
+                                            <h2>
+                                                {{ name }}
+                                            </h2>
+                                        </span>
+                                        <span class="blocks-item-description">
+                                            {{#each articles}}
+                                                {{#if promoted}}
+                                                    <h3>
+                                                        {{ title }}
+                                                    </h3>
+                                                {{/if}}
+                                            {{/each}}
+                                        </span>
+                                    </a>
+                                </li>
+                            {{/is}}
+                        {{/each}}
+                    {{/each}}
+                {{/each}}
+
+
             </ul>
         </section>
     </section>
-
-
 </div>
