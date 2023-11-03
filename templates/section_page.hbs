@@ -58,17 +58,9 @@
 
               <div class="blocks-article-item-link-faq" onclick="openTab('{{title}}');"><h2>{{title}}</h2></div>
               <div id="{{title}}" class="containerTab" style="display:none;"><p>{{body}}</p></div>
-              
-              <script>
-function openTab(tabName) {
-  var i, x;
-  x = document.getElementsByClassName("containerTab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(tabName).style.display = "block";
-}
-</script>
+
+              <script src="{{asset 'expanding_section.js'}}"></script>
+
               {{#if internal}}
                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-lock" title="{{t 'internal'}}">
                   <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1"/>
