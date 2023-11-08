@@ -1001,27 +1001,18 @@ table {
 
 .news-banner {
   border-radius: 100px;
+  background: $brand_color;
   display: flex;
   margin: auto;
   margin-bottom: 10px;
   list-style: none;
   padding: 5px;
-  width:max-content;
-  font-size:small;
-
-  align-items: center;
-  height: 20px;
-  flex: wrap;
-
-  background: $brand_color;
   border: 1px solid $blocks_item_border_color;
-}
-
-.banner_div {
-  display: flex;
-  width: fit-content;
-  margin:auto;
-  flex-wrap: wrap;
+  width:fit-content;
+  font-size:small;
+  height: 20px;
+  align-items:center;
+  
 }
 
 .skip-navigation {
