@@ -1010,7 +1010,7 @@ table {
   border: 1px solid $blocks_item_border_color;
   width:fit-content;
   font-size:small;
-  height: 20px;
+  height: fit-content;
   align-items:center;
   
 }
