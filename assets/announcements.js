@@ -9,9 +9,14 @@ $(document).ready(function () {
     dataType: 'json',
     success: function (data) {
       $('#announcementContent').html(data.article.body);
+      if (data.article.body==null){
+        $('.news-banner').addClass("visibility-hidden");
+      }
     },
     error: function () {
       console.log('Failed to load announcements content.');
     }
   });
 });
+
+
