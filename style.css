@@ -558,6 +558,8 @@ ul {
 table {
   width: 100%;
   table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
