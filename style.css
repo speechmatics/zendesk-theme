@@ -558,6 +558,8 @@ ul {
 table {
   width: 100%;
   table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -1010,7 +1012,7 @@ table {
   border: 1px solid $blocks_item_border_color;
   width:fit-content;
   font-size:small;
-  height: 20px;
+  height: fit-content;
   align-items:center;
   
 }
