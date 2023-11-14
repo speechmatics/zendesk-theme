@@ -1453,6 +1453,7 @@ footer ul {
   justify-content: flex-start;*/
   list-style: none;
   padding: 0;
+  cursor: pointer;
 
 }
 
