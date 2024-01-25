@@ -611,7 +611,7 @@ table {
 .form {
   max-width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   justify-items: center;
 }
 
@@ -2383,7 +2383,7 @@ footer ul {
 }
 .comment-info {
   min-width: 0;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
   width: 100%;
 }
 [dir=rtl] .comment-info {
@@ -2410,7 +2410,10 @@ footer ul {
 }
 .comment-meta {
   flex: 1 1 auto;
+  text-align: left;
+
 }
+
 .comment-labels {
   flex-basis: 100%;
 }
@@ -2485,6 +2488,8 @@ footer ul {
   font-family: $text_font;
   line-height: 1.6;
   overflow-x: auto;
+  text-align:left;
+  padding-left: 50px;
 }
 .comment-body a {
   color: $link_color;
@@ -3644,6 +3649,12 @@ footer ul {
   font-size: 10px;
 }
 
+.container .form {
+  text-align: left;
+  width: 60%;
+}
+
+
 /* Following table */
 @media (min-width: 768px) {
   .subscriptions-subscribe button {
@@ -3852,6 +3863,8 @@ footer ul {
 .request-follow-up {
   padding-top: 20px;
 }
+
+
 
 /***** Pagination *****/
 .pagination {
@@ -5064,3 +5077,6 @@ url('https://support.speechmatics.com/theming/editor/6f8408d6-bf82-44bf-9dc8-989
 font-weight: 400;
 font-style: normal; 
 }
+
+
+/***Internal Knowledgebase***/
