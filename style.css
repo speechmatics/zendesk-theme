@@ -5081,29 +5081,47 @@ font-style: normal;
 
 /***Internal Knowledgebase***/
 
+.team-container {
+  width: 100%;
+ margin: 0 auto;
+  padding: 0 5%;
+  text-align: center;
+  justify-content: center;
+}
+.profile-image {
+  max-width: 90%;
+  height: 300px;
+  padding-top: 10px;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
+  border-radius: 15px;
+  width: 300px;
+  margin: 15px;
   text-align: center;
   font-family: arial;
+  display: inline-block;
+  font-size: 12px;
 }
 
 .title {
   color: grey;
-  font-size: 18px;
+  font-size: 16px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .card button {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  padding: 10px;
   color: white;
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   font-size: 18px;
 }
 
