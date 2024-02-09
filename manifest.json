@@ -367,7 +367,7 @@
           "type": "checkbox",
           "description": "articles_in_section_description",
           "label": "articles_in_section_label",
-          "value": true
+          "value": false
         },
         {
           "identifier": "show_article_author",
@@ -402,14 +402,14 @@
           "type": "checkbox",
           "description": "related_articles_description",
           "label": "related_articles_label",
-          "value": true
+          "value": false
         },
         {
           "identifier": "show_article_sharing",
           "type": "checkbox",
           "description": "article_sharing_description",
           "label": "article_sharing_label",
-          "value": false
+          "value": true
         }
       ]
     },

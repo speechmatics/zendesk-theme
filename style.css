@@ -24,6 +24,12 @@ h1 {
   margin: 0.67em 0;
 }
 
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  margin: 0.67em 0;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -1190,7 +1196,7 @@ footer ul {
 }
 
 /***** Breadcrumbs *****/
-.breadcrumbs {
+/***** .breadcrumbs {
   margin: 0 0 15px 0;
   padding: 0;
   display: flex;
@@ -1213,7 +1219,7 @@ footer ul {
 }
 .breadcrumbs li a:visited {
   color: $link_color;
-}
+}*****/
 
 /***** Search field *****/
 .search-container {
@@ -1457,7 +1463,19 @@ footer ul {
 
 }
 
-
+.ribbon {
+  width: 60px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: -25px;
+  top: -12px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background-color: #ff9800;
+  color: white;
+}
 
 @media (min-width: 768px) {
   .blocks-list {
@@ -5081,30 +5099,52 @@ font-style: normal;
 
 /***Internal Knowledgebase***/
 
+.team-container {
+  width: 75%;
+ margin: 0 auto;
+  padding: 0 5%;
+  text-align: center;
+  justify-content: center;
+}
+.profile-image {
+  max-width: 80%;
+  height: 200px;
+  padding-top: 10px;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
+  border-radius: 15px;
+  width: 250px;
+  margin: 10px;
+  line-height: 1.12;
   text-align: center;
   font-family: arial;
+  display: inline-block;
+  font-size: 14px;
 }
 
 .title {
   color: grey;
-  font-size: 18px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.16;
 }
 
 .card button {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  padding: 10px;
   color: white;
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   font-size: 18px;
+  margin: 10px;
+  
 }
 
 a {
@@ -5115,4 +5155,40 @@ a {
 
 button:hover, a:hover {
   opacity: 0.7;
+}
+
+/**Back button**/
+
+.back-container {
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 10%;
+min-width: 200px;
+padding: 0 50px;
+}
+
+
+.support_internal {
+-webkit-box-pack: center;
+-webkit-box-align: center;
+height: 100%;
+background: $background_color;
+color: #252525;
+font-family: Inter, sans-serif;
+border-radius: 8px;
+letter-spacing: 1px;
+transition: all 0.3s ease;
+text-transform: uppercase;
+position: relative;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+font-weight: 550;
+font-size: 12px;
+transform: skew(-21deg);
+margin: 20px;
+padding: 5px 30px;
+cursor: pointer;
+transition: color 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s, background 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s, border 0.2s cubic-bezier(0.62, 0.05, 0.01, 0.99) 0s;
 }
