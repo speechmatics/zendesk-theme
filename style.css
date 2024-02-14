@@ -1640,6 +1640,11 @@ footer ul {
   text-align: center;
 }
 
+.embedded-object {
+  display: inline-block;
+  margin-right: 10px; /* Adjust as needed */
+}
+
 @media (min-width: 1024px) {
   .promoted-articles {
     flex-direction: row;
