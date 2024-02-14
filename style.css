@@ -35,6 +35,10 @@ pre {
   font-size: 1em;
 }
 
+href {
+
+}
+
 a {
   background-color: transparent;
 }
@@ -5109,7 +5113,7 @@ font-style: normal;
 
 a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: medium;
   color: black;
 }
 
