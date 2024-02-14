@@ -2071,9 +2071,11 @@ footer ul {
 .article-body li > ul,
 .article-body li > ol {
   margin: 0;
+ 
 }
 .article-body ul {
   list-style-type: disc;
+  text-align: left;
 }
 .article-body :not(pre) > code {
   background: darken($background_color, 3%);
@@ -5120,3 +5122,8 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
+
+ #heads {
+  list-style-image: url(https://theme.zdassets.com/theme_assets/user.png);
+ 
+ }
