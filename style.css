@@ -42,7 +42,7 @@ href {
 a {
   background-color: transparent;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   color: black;
 }
 
@@ -2019,6 +2019,7 @@ text-decoration: none;
 .article-body a {
   color: $link_color;
   text-decoration: underline;
+  font-size: 14px;
 }
 .article-body a:visited {
   color: $visited_link_color;
