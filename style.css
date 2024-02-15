@@ -35,6 +35,10 @@ pre {
   font-size: 1em;
 }
 
+href {
+
+}
+
 a {
   background-color: transparent;
   text-decoration: none;
@@ -1644,6 +1648,11 @@ footer ul {
 .articles {
   margin: auto;
   text-align: center;
+}
+
+.embedded-object {
+  display: inline-block;
+  margin-right: 10px; /* Adjust as needed */
 }
 
 @media (min-width: 1024px) {
@@ -5118,6 +5127,7 @@ font-style: normal;
   width: 100%;
   font-size: 18px;
 }
+
 
 button:hover, a:hover {
   opacity: 0.7;
