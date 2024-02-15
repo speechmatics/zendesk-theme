@@ -1229,8 +1229,13 @@ footer ul {
   
 }
 
+.breadcrumbs li:hover {
+  background-color: #4fa9a25C;
+}
+
 .breadcrumbs a {
 font-size:18px;
+text-decoration: none;
 
 }
 
