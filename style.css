@@ -37,6 +37,9 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
 }
 
 abbr[title] {
@@ -1190,29 +1193,36 @@ footer ul {
 }
 
 /***** Breadcrumbs *****/
+
+
 .breadcrumbs {
   margin: 0 0 15px 0;
   padding: 0;
   display: flex;
 }
-@media (min-width: 768px) {
+@media (min-width: 25%) {
   .breadcrumbs {
     margin: 0;
   }
 }
 .breadcrumbs li {
   color: lighten($text_color, 20%);
-  font-size: 13px;
-  max-width: 450px;
+  /***font-size: 12px;***/
+  max-width: 300px;
   overflow: hidden;
   text-overflow: ellipsis;
+  border: 2px solid #4FA9A2;
+  border-radius:20px 10px 20px 10px;
+  padding:3px;
+  margin:2px;
 }
-.breadcrumbs li + li::before {
+/***.breadcrumbs li + li::before {
   content: ">";
   margin: 0 4px;
-}
+} ***/
 .breadcrumbs li a:visited {
-  color: $link_color;
+  color: $text_color;
+  
 }
 
 /***** Search field *****/
@@ -5107,12 +5117,6 @@ font-style: normal;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
 }
 
 button:hover, a:hover {
