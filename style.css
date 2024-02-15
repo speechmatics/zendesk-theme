@@ -42,7 +42,7 @@ href {
 a {
   background-color: transparent;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   color: black;
 }
 
@@ -1215,10 +1215,10 @@ footer ul {
   max-width: 300px;
   overflow: hidden;
   text-overflow: ellipsis;
-  border: 2px solid #4FA9A2;
-  border-radius:20px 10px 20px 10px;
-  padding:3px;
-  margin:2px;
+  border: 2px solid #4fa9a26C;
+  border-radius:40px 8px;
+  padding:0px 12px;
+  margin:1px 0px;
 }
 /***.breadcrumbs li + li::before {
   content: ">";
@@ -1227,6 +1227,16 @@ footer ul {
 .breadcrumbs li a:visited {
   color: $text_color;
   
+}
+
+.breadcrumbs li:hover {
+  background-color: #4fa9a25C;
+}
+
+.breadcrumbs a {
+font-size:18px;
+text-decoration: none;
+
 }
 
 /***** Search field *****/
@@ -2009,6 +2019,7 @@ footer ul {
 .article-body a {
   color: $link_color;
   text-decoration: underline;
+  font-size: 14px;
 }
 .article-body a:visited {
   color: $visited_link_color;
