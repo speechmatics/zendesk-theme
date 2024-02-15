@@ -1215,10 +1215,10 @@ footer ul {
   max-width: 300px;
   overflow: hidden;
   text-overflow: ellipsis;
-  border: 2px solid #4FA9A2;
-  border-radius:20px 10px 20px 10px;
-  padding:3px;
-  margin:2px;
+  border: 2px solid #4fa9a26C;
+  border-radius:40px 8px;
+  padding:0px 12px;
+  margin:1px 0px;
 }
 /***.breadcrumbs li + li::before {
   content: ">";
@@ -1227,6 +1227,11 @@ footer ul {
 .breadcrumbs li a:visited {
   color: $text_color;
   
+}
+
+.breadcrumbs a {
+font-size:18px;
+
 }
 
 /***** Search field *****/
