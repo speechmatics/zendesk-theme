@@ -5120,7 +5120,7 @@ font-style: normal;
 
 .team-container {
   width:100%;
-  
+  display: flex;
 }
 
 .profile-image {
@@ -5135,7 +5135,7 @@ font-style: normal;
   margin: 5px;
   text-align: center;
   font-family: arial;
-  display: flex;
+  
 }
 
 .title {
