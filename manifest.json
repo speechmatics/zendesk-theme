@@ -1,7 +1,7 @@
 {
   "name": "Github Import",
   "author": "Zendesk",
-  "version": "3.6.7.7",
+  "version": "3.6.7.8",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -112,6 +112,20 @@
           "description": "alert_left_border_color_description",
           "label": "alert_left_border_color_label",
           "value": "rgba(255, 3, 3, 1)"
+        },
+        {
+          "identifier": "notification_background_color",
+          "type": "color",
+          "description": "notification_background_color_description",
+          "label": "notification_background_color_label",
+          "value": "rgba(79, 169, 162, 0.36)"
+        },
+        {
+          "identifier": "notification_border_color",
+          "type": "color",
+          "description": "notification_border_color_description",
+          "label": "notification_border_color_label",
+          "value": "rgba(180, 219, 216, 1)"
         }
       ]
     },
