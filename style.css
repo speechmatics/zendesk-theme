@@ -571,6 +571,7 @@ ul {
   text-align: left;
   padding: 15px;
   margin: 20px;
+  padding-bottom:0.3px;
 }
 
 /***** Tables *****/
