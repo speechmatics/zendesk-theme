@@ -1239,6 +1239,10 @@ text-decoration: none;
 
 }
 
+.breadcrumbs li:first-child {
+  visibility: hidden;
+}
+
 /***** Search field *****/
 .search-container {
   position: absolute;
