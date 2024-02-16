@@ -1225,12 +1225,12 @@ footer ul {
 .breadcrumbs li {
   color: lighten($text_color, 20%);
   /***font-size: 12px;***/
-  max-width: 300px;
+  max-width: 250px;
   overflow: hidden;
   text-overflow: ellipsis;
   border: 2px solid #4fa9a26C;
   border-radius:40px 8px;
-  padding:0px 12px;
+  padding:0px 10px;
   margin:1px 0px;
 }
 /***.breadcrumbs li + li::before {
@@ -1247,13 +1247,14 @@ footer ul {
 }
 
 .breadcrumbs a {
-font-size:18px;
+font-size:16px;
 text-decoration: none;
 
 }
 
 .breadcrumbs li:first-child {
   visibility: hidden;
+  max-width: 0%;
 }
 
 /***** Search field *****/
@@ -5132,7 +5133,7 @@ font-style: normal;
 
 .team-container {
   width:100%;
-  align-content: center;
+  display: flex;
 }
 
 .profile-image {
@@ -5147,6 +5148,7 @@ font-style: normal;
   margin: 5px;
   text-align: center;
   font-family: arial;
+  
 }
 
 .title {
