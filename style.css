@@ -2263,11 +2263,11 @@ text-decoration: none;
 .article table {
   border-radius: 20px;
   text-align: left;
-  border: 1px solid $blocks_item_border_color;
+  
 }
 
 .article tr {
-  border: transparent; 
+  border: white; 
 }
 
 .article th, td {
@@ -2286,13 +2286,17 @@ text-decoration: none;
     border-top-right-radius: 20px;
   }
   
-  tr:last-child td:first-child {
+  tr:last-child {
     border-bottom-left-radius: 20px; 
   }
   
   tr:last-child td:last-child {
     border-bottom-right-radius: 20px; 
   }
+
+.bottom-left {
+  border-bottom-left-radius: 22px;
+}
 
 .sidenav-title {
   font-size: 15px;
