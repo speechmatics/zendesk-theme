@@ -126,6 +126,13 @@
           "description": "notification_border_color_description",
           "label": "notification_border_color_label",
           "value": "rgba(180, 219, 216, 1)"
+        },
+        {
+          "identifier": "codeblock_background_color",
+          "type": "color",
+          "description": "codeblock_background_color_description",
+          "label": "codeblock_background_color_label",
+          "value": "rgba(252, 252, 253, 1)"
         }
       ]
     },
