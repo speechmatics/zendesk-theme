@@ -6,3 +6,8 @@
 <!-- Make the translated search clear button label available for use in JS -->
 <!-- See buildClearSearchButton() in script.js -->
 <script type="text/javascript">window.searchClearButtonLabelLocalized = "{{t 'search_clear'}}";</script>
+
+<!-- adding the highlight.js package -->
+<link rel="stylesheet" href="{{asset 'prism.css'}}">
+<script src="{{asset 'prism.js'}}"></script>
+<script>hljs.highlightAll();</script>
