@@ -33,6 +33,8 @@ hr {
 pre {
   font-family: 'Inter', sans-serif;
   font-size: 1em;
+  text-align: left;
+  background-color: #E9EBED;
 }
 
 href {
