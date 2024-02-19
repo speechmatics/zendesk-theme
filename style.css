@@ -1965,6 +1965,7 @@ text-decoration: none;
   * 17%     | 66%     | 17%
   */
   flex: 1 0 auto;
+  
 }
 @media (min-width: 1024px) {
   .article {
@@ -5214,7 +5215,7 @@ padding-left:0px;
 
      
   .ribbon {
-    width: 60px;
+    width: 100px;
     font-size: 14px;
     padding: 4px;
     position: absolute;
