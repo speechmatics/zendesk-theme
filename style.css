@@ -33,8 +33,6 @@ hr {
 pre {
   font-family: 'Inter', sans-serif;
   font-size: 1em;
-  text-align: left;
-  background-color: #E9EBED;
 }
 
 href {
@@ -2133,10 +2131,12 @@ text-decoration: none;
 .article-body pre {
   background: darken($background_color, 3%);
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 20px;
   padding: 10px 15px;
   overflow: auto;
   white-space: pre;
+  text-align: left;
+  background-color: #E9EBED;
 }
 .article-body blockquote {
   border-left: 1px solid #ddd;
