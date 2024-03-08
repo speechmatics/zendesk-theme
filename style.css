@@ -5256,7 +5256,7 @@ div.ribbon + .block-inner {
   margin-right: -5px;
 }
 
-div.ribbon {
+div.ribbon-div {
     z-index: 1;
     position: absolute;
     top: -25px;
@@ -5265,11 +5265,8 @@ div.ribbon {
     height: 86px;
     margin-left: -5px;
    
-    background:url(/assets/ribbonpurple.png);
+    background:url($assets-ribbonpurple-png)
 }
-
-
-
 
 div.ribbon-text {
     position: absolute;
