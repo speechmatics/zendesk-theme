@@ -1212,6 +1212,7 @@ footer ul {
 /***** Breadcrumbs *****/
 
 
+
 .breadcrumbs {
   margin: 0 0 15px 0;
   padding: 0;
@@ -1225,12 +1226,12 @@ footer ul {
 .breadcrumbs li {
   color: lighten($text_color, 20%);
   /***font-size: 12px;***/
-  max-width: 250px;
+  max-width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
   border: 2px solid #4fa9a26C;
   border-radius:40px 8px;
-  padding:0px 10px;
+  padding:0px 15px;
   margin:1px 0px;
 }
 /***.breadcrumbs li + li::before {
@@ -1249,7 +1250,8 @@ footer ul {
 .breadcrumbs a {
 font-size:16px;
 text-decoration: none;
-
+-ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .breadcrumbs li:first-child {
