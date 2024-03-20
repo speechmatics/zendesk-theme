@@ -1661,7 +1661,7 @@ text-decoration: none;
 }
 
 .announcement-text {
-  text-color:magenta;
+  padding-right: 10px
 }
 
 .home-section h2 {
