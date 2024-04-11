@@ -1369,8 +1369,8 @@ text-decoration: none;
   border-right-color: $brand_color;
 }
 
-.search-icon {
-  /*position: relative;*/
+/*.search-icon {
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
@@ -1385,7 +1385,7 @@ text-decoration: none;
 [dir=rtl] .search-icon {
   left: auto;
   right: 15px;
-}
+} */
 
 /***** Hero component *****/
 
