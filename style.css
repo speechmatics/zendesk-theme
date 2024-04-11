@@ -2,7 +2,30 @@
 /***** Normalize.css *****/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); 
+/***@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); No longer used ***/
+
+@font-face {
+  font-family: 'DMsans';
+  src: local ("DMsans");
+  src: url('assets/DMsans.eot');
+  src: url('assets/DMsans.eot#iefix') format('eot'),
+  url('assets/DMsans.woff') format('woff'), 
+  url('assets/DMsans.ttf') format('truetype'),
+  url('assets/DMsans.svg#webfont') format('svg');
+  font-weight: 400;
+  font-style: normal; 
+}
+
+  @font-face {
+    font-family: "PPtelegraf-medium";
+    src: url('assets/PPTelegraf-Regular.eot');
+    src: url('assets/PPTelegraf-Medium.eot#iefix') format('eot'),
+    url('assets/PPTelegraf-Medium.woff') format('woff'), 
+    url('assets/PPTelegraf-Medium.ttf') format('truetype'),
+    url('assets/PPTelegraf-Medium.svg#webfont') format('svg');
+    font-weight: 400;
+    font-style: normal; 
+  }
 
 html {
   line-height: 1.15;
@@ -19,7 +42,7 @@ main {
 }
 
 h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: $heading_font;
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -31,18 +54,14 @@ hr {
 }
 
 pre {
-  font-family: 'Inter', sans-serif;
+  font-family: $text_font;
   font-size: 1em;
-}
-
-href {
-
 }
 
 a {
   background-color: transparent;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
 }
 
@@ -60,7 +79,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: 'Inter', sans-serif;
+  font-family: $text_font;
   font-size: 1em;
 }
 
@@ -115,7 +134,7 @@ button,
 [type=submit] {
   -webkit-box-pack: center;
   justify-content: center;
-  font-family: Inter, sans-serif;
+  font-family: $text_font;
   -webkit-box-align: center;
   align-items: center;
   font-weight: 600;
@@ -256,6 +275,14 @@ h3 {
 h4 {
   font-family: $heading_font;
   font-size: 16px;
+}
+
+p {
+  font-family: $text_font;
+}
+
+li {
+  font-family: $text_font;
 }
 
 a {
@@ -414,7 +441,7 @@ ul {
 .request-button {
     -webkit-box-pack: center;
     justify-content: center;
-    font-family: Inter, sans-serif;
+    font-family: $text_font;
     -webkit-box-align: center;
     align-items: center;
     font-weight: 600;
@@ -1155,7 +1182,7 @@ table {
 /***** Footer *****/
 footer {
   font-size: .9rem;
-  font-family: 'Inter', sans-serif;
+  font-family: $text_font;
   line-height: 1.7rem;
   justify-content: center;
 }
@@ -4845,7 +4872,7 @@ html[lang|=zh] .search-results-description em {
 .notification {
   border: 1px solid;
   display: table;
-  font-family: sans-serif;
+  font-family: $text_font;
   font-size: 12px;
   padding: 13px 15px;
   transition: height 0.2s;
@@ -5148,17 +5175,6 @@ html[dir=rtl] .notification-left-aligned {
   border: 1px solid #87929D;
 }
 
-@font-face {
-font-family: 'Regular';
-src: local ("Regular"), 
-url('https://support.speechmatics.com/theming/editor/6f8408d6-bf82-44bf-9dc8-989b9cb2e57f/assets/Inter-Regular.woff') format('woff'), 
-url('https://support.speechmatics.com/theming/editor/6f8408d6-bf82-44bf-9dc8-989b9cb2e57f/assets/Inter-Regular.ttf') format('truetype'),
-url('https://support.speechmatics.com/theming/editor/6f8408d6-bf82-44bf-9dc8-989b9cb2e57f/assets/Inter-Regular.svg') format('svg');
-font-weight: 400;
-font-style: normal; 
-}
-
-
 /***Internal Knowledgebase***/
 
 .team-container {
@@ -5178,7 +5194,7 @@ font-style: normal;
   width: 300px;
   margin: 5px;
   text-align: center;
-  font-family: arial;
+  font-family: $text_font;
   
 }
 
