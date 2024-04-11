@@ -7,8 +7,7 @@
 @font-face {
   font-family: 'DMsans';
   src: local ("DMsans");
-  src: url('assets/DMsans.eot');
-  src: url('assets/DMsans.eot#iefix') format('eot'),
+  src: url('assets/DMsans.ttf'),
   url('assets/DMsans.woff') format('woff'), 
   url('assets/DMsans.ttf') format('truetype'),
   url('assets/DMsans.svg#webfont') format('svg');
@@ -18,14 +17,13 @@
 
   @font-face {
     font-family: "PPtelegraf-medium";
-    src: url('assets/PPTelegraf-Regular.eot');
-    src: url('assets/PPTelegraf-Medium.eot#iefix') format('eot'),
+    src: url('assets/PPTelegraf-Medium.ttf'),
     url('assets/PPTelegraf-Medium.woff') format('woff'), 
     url('assets/PPTelegraf-Medium.ttf') format('truetype'),
     url('assets/PPTelegraf-Medium.svg#webfont') format('svg');
     font-weight: 400;
     font-style: normal; 
-  }
+}
 
 html {
   line-height: 1.15;
@@ -39,12 +37,6 @@ body {
 
 main {
   display: block;
-}
-
-h1 {
-  font-family: $heading_font;
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 hr {
