@@ -1154,7 +1154,6 @@ table {
 
 /***** Footer *****/
 footer {
-  
   font-size: .9rem;
   font-family: 'Inter', sans-serif;
   line-height: 1.7rem;
@@ -1163,6 +1162,17 @@ footer {
 
 footer ul {
   padding-left: 0;
+}
+
+.social-icons {
+  padding: 7px
+}
+
+.footer-links {
+  padding-top: 2.5%;
+  padding-bottom: 2%;
+  font-size: 14px;
+  color: $background_color;
 }
 
 .footer-nav {
@@ -1178,18 +1188,17 @@ footer ul {
 
 .footer-baseline {
   background-color: $footer_background_color;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   color: $brand_color;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 17%;
+  padding-right: 17%;
   align-items: center;
   margin-top: 0px;
-  
 }
 
 .footer-baseline > div,
@@ -1198,10 +1207,15 @@ footer ul {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  
+  line-height: 20px;
+}
+
+.legal-links{
+ 
 }
 
 .legal-links a {
+  font-size: 14px;
   color: $background_color;
 }
 
