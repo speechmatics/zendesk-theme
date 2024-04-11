@@ -1387,8 +1387,10 @@ text-decoration: none;
 }
 
 /***** Hero component *****/
+
+/***
 .hero {
-  background-image: url($homepage_background_image);
+  
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -1396,6 +1398,7 @@ text-decoration: none;
   text-align: center;
   width: 100%;
 }
+
 .hero-inner {
   position: relative;
   top: 50%;
@@ -1403,6 +1406,7 @@ text-decoration: none;
   max-width: 610px;
   margin: 0 auto;
 }
+***/
 
 .page-header {
   display: flex;
