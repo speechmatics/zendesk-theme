@@ -1370,16 +1370,17 @@ text-decoration: none;
 }
 
 .search-icon {
-  position: relative;
-  top: 40%;
+  /*position: relative;*/
+  top: 50%;
   transform: translateY(-50%);
   position: absolute;
-  left: 15px;
+  left: 26%;
   z-index: 1;
   width: 18px;
   height: 18px;
   color: #777;
   pointer-events: none;
+  padding-left:5px;
 }
 [dir=rtl] .search-icon {
   left: auto;
