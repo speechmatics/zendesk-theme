@@ -1388,17 +1388,18 @@ text-decoration: none;
   top: 40%;
   transform: translateY(-50%);
   position: absolute;
-  left: 15px;
+  left: 5%;
   z-index: 1;
   width: 18px;
   height: 18px;
   color: #777;
   pointer-events: none;
+  
 }
 [dir=rtl] .search-icon {
   left: auto;
   right: 15px;
-}
+} 
 
 /***** Hero component *****/
 
@@ -1412,6 +1413,7 @@ text-decoration: none;
   text-align: center;
   width: 100%;
 }
+***/
 
 .hero-inner {
   position: relative;
@@ -1421,7 +1423,7 @@ text-decoration: none;
   margin: 0 auto;
   padding-bottom: 15px;
 }
-***/
+
 
 .page-header {
   display: flex;
