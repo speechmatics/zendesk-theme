@@ -243,7 +243,7 @@ h1 {
 h2 {
   font-family: $heading_font;
   font-size: 22px;
-  color: #30a4ac;
+  color: $text_color;
 ;
 }
 
@@ -1509,6 +1509,7 @@ text-decoration: none;
   }
 }
 .blocks-item {
+  background-color: white;
   border: 1px solid $blocks_item_border_color;
   border-radius: 0.5rem;
   box-sizing: border-box;
