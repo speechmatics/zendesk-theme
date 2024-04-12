@@ -48,21 +48,21 @@
           "type": "color",
           "description": "link_color_description",
           "label": "link_color_label",
-          "value": "rgba(38, 106, 255, 1)"
+          "value": "rgb(41, 163, 131)"
         },
         {
           "identifier": "hover_link_color",
           "type": "color",
           "description": "hover_link_color_description",
           "label": "hover_link_color_label",
-          "value": "rgba(16, 24, 40, 1)"
+          "value": "rgb(32, 131, 104)"
         },
         {
           "identifier": "visited_link_color",
           "type": "color",
           "description": "visited_link_color_description",
           "label": "visited_link_color_label",
-          "value": "rgba(118, 79, 190, 1)"
+          "value": "rgb(41, 163, 131)"
         },
         {
           "identifier": "background_color",
