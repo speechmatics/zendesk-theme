@@ -144,11 +144,11 @@
           "type": "list",
           "description": "heading_font_description",
           "label": "heading_font_label",
-          "value": "PPtelegraf-medium",
+          "value": "PPTelegraf-Medium",
           "options": [
             {
-              "label": "PPtelegraf-medium, sans-serif",
-              "value": "PPtelegraf-medium"
+              "label": "PPTelegraf-Medium",
+              "value": "PPTelegraf-Medium"
             },
             {
               "label": "DMsans, sans-serif",

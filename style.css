@@ -6,22 +6,18 @@
 
 @font-face {
   font-family: 'DMsans';
-  src: url("{{asset 'DMsans.woff'}}");
-  url('assets/DMsans.woff') format('woff'), 
-  url('assets/DMsans.ttf') format('truetype'),
-  url('assets/DMsans.svg#webfont') format('svg');
+  src: local ("DMsans");
+  src: url('$assets-DMsans-woff');
   font-weight: 400;
   font-style: normal; 
 }
 
-  @font-face {
-    font-family: "PPtelegraf-medium";
-    src: url("{{asset 'PPtelegraf-medium.woff'}}");
-    url('assets/PPTelegraf-Medium.woff') format('woff'), 
-    url('assets/PPTelegraf-Medium.ttf') format('truetype'),
-    url('assets/PPTelegraf-Medium.svg#webfont') format('svg');
-    font-weight: 400;
-    font-style: normal; 
+@font-face {
+  font-family: 'PPTelegraf-Medium';
+  src: local ("PPTelegraf-Medium");
+  src: url('$assets-PPTelegraf-Medium-woff');
+  font-weight: 400;
+  font-style: normal; 
 }
 
 html {
