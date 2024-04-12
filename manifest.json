@@ -142,7 +142,6 @@
         {
           "identifier": "heading_font",
           "type": "list",
-          "description":"heading_font_desc",
           "label": "heading_font_label",
           "value": "PPTelegraf-Medium",
           "options": [
