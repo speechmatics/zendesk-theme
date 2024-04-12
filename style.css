@@ -1035,19 +1035,18 @@ table {
 }
 
 .news-banner {
-  border-radius: 100px;
-  background: $brand_color;
+  background: #fff7c2;
+  color: $text_color;
+  border-radius: 8px;
+  font-family: "PPTelegraf-Medium";
   display: flex;
   margin: auto;
   margin-bottom: 10px;
   list-style: none;
-  padding: 5px;
-  border: 1px solid $blocks_item_border_color;
   width:fit-content;
   font-size:small;
   height: fit-content;
   align-items:center;
-  
 }
 
 .skip-navigation {
@@ -1704,7 +1703,7 @@ text-decoration: none;
 }
 
 .announcement-text {
-  padding-right: 10px
+  padding: 2px 10px 2px 10px;
 }
 
 .home-section h2 {
