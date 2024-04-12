@@ -6,14 +6,16 @@
 
 @font-face {
   font-family: 'DMsans';
-  src: url('$assets-DMsans-ttf') format('truetype');
+  src: url('$assets-dmsans-ttf'),
+         url('$assets-dmsans-ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PPTelegraf-Medium';
-  src: url('$assets-PPTelegraf-Medium-ttf') format('truetype');
+  src: url('$assets-pptelegraf-medium-ttf'),
+         url('$assets-PPTelegraf-Medium-ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  font-family: $text_font;
+  font-family: "DMsans";
 }
 
 main {
@@ -39,7 +41,7 @@ hr {
 }
 
 pre {
-  font-family: $text_font;
+  font-family: "DMsans";
   font-size: 1em;
 }
 
@@ -64,7 +66,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: $text_font;
+  font-family: "DMsans";
   font-size: 1em;
 }
 
@@ -119,7 +121,7 @@ button,
 [type=submit] {
   -webkit-box-pack: center;
   justify-content: center;
-  font-family: $text_font;
+  font-family: "DMsans";
   -webkit-box-align: center;
   align-items: center;
   font-weight: 600;
@@ -219,7 +221,7 @@ template {
 body {
   background-color: $background_color;
   color: $text_color;
-  font-family: $text_font;
+  font-family: "DMsans";
   font-size: 15px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -236,7 +238,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading_font;
+  font-family: "PPTelegraf-Medium";
   margin-top: 0;
 }
 
@@ -245,28 +247,28 @@ h1 {
 }
 
 h2 {
-  font-family: $heading_font;
+  font-family: "PPTelegraf-Medium";
   font-size: 22px;
   color: $text_color;
 }
 
 h3 {
-  font-family: $heading_font;
+  font-family: "PPTelegraf-Medium";
   font-size: 18px;
   font-weight: 600;
 }
 
 h4 {
-  font-family: $heading_font;
+  font-family: "PPTelegraf-Medium";
   font-size: 16px;
 }
 
 p {
-  font-family: $text_font;
+  font-family: "DMsans";
 }
 
 li {
-  font-family: $text_font;
+  font-family: "DMsans";
 }
 
 a {
@@ -425,7 +427,7 @@ ul {
 .request-button {
     -webkit-box-pack: center;
     justify-content: center;
-    font-family: $text_font;
+    font-family: "DMsans";
     -webkit-box-align: center;
     align-items: center;
     font-weight: 600;
@@ -1166,7 +1168,7 @@ table {
 /***** Footer *****/
 footer {
   font-size: .9rem;
-  font-family: $text_font;
+  font-family: "DMsans";
   line-height: 1.7rem;
   justify-content: center;
 }
@@ -2584,7 +2586,7 @@ text-decoration: none;
   word-break: break-word;
   word-wrap: break-word;
   display: flow-root;
-  font-family: $text_font;
+  font-family: "DMsans";
   line-height: 1.6;
   overflow-x: auto;
   text-align:left;
@@ -2895,7 +2897,7 @@ text-decoration: none;
   content: attr(data-follower-count);
   color: $brand_color;
   display: inline-block;
-  font-family: $heading_font;
+  font-family: "PPTelegraf-Medium";
   margin-left: 15px;
   padding-left: 10px;
   position: absolute;
@@ -3127,7 +3129,7 @@ text-decoration: none;
   margin-bottom: 30px;
 }
 .post-content {
-  font-family: $text_font;
+  font-family: "DMsans";
   line-height: 1.6;
   word-break: break-word;
 }
@@ -4864,7 +4866,7 @@ html[lang|=zh] .search-results-description em {
 .notification {
   border: 1px solid;
   display: table;
-  font-family: $text_font;
+  font-family: "DMsans";
   font-size: 12px;
   padding: 13px 15px;
   transition: height 0.2s;
@@ -5186,7 +5188,7 @@ html[dir=rtl] .notification-left-aligned {
   width: 300px;
   margin: 5px;
   text-align: center;
-  font-family: $text_font;
+  font-family: "DMsans";
   
 }
 

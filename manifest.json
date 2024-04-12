@@ -148,7 +148,7 @@
           "options": [
             {
               "label": "PPTelegraf-Medium",
-              "value": "PPTelegraf-Medium, sans-serif"
+              "value": "PPTelegraf-Medium.ttf, sans-serif"
             },
             {
               "label": "Inter",
