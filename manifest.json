@@ -146,10 +146,6 @@
           "value": "PPTelegraf-Medium",
           "options": [
             {
-              "label": "PPTelegraf-Medium",
-              "value": "PPTelegraf-Medium"
-            },
-            {
               "label": "Inter",
               "value": "Inter, sans-serif"
             },
