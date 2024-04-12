@@ -1,7 +1,7 @@
 {
   "name": "Github Import",
   "author": "Zendesk",
-  "version": "3.7.4.5",
+  "version": "3.7.4.6",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -229,7 +229,7 @@
           "type": "list",
           "description": "text_font_description",
           "label": "text_font_label",
-          "value": "DMsans, sans-serif",
+          "value": "'DMsans', sans-serif",
           "options": [
             {
               "label": "Inter",
@@ -237,7 +237,7 @@
             },
             {
               "label": "DMsans",
-              "value": "DMsans, sans-serif"
+              "value": "'DMsans', sans-serif"
             },
             {
               "label": "System",
