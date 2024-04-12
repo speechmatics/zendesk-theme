@@ -6,16 +6,14 @@
 
 @font-face {
   font-family: 'DMsans';
-  src: url('$assets-DMsans-ttf'),
-         url('$assets-DMsans-ttf') format('truetype');
+  src: url('$assets-DMsans-ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PPTelegraf-Medium';
-  src: url('$assets-PPTelegraf-Medium-ttf'),
-         url('$assets-PPTelegraf-Medium-ttf') format('truetype');
+  src: url('$assets-PPTelegraf-Medium-ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
