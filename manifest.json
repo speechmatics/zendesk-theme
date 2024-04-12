@@ -142,17 +142,13 @@
         {
           "identifier": "heading_font",
           "type": "list",
-          "description": "heading_font_description",
+          "description": "heading_font_desc",
           "label": "heading_font_label",
           "value": "PPTelegraf-Regular",
           "options": [
             {
               "label": "PPTelegraf-Regular",
-              "value": "PPTelegraf-Regular, sans-serif"
-            },
-            {
-              "label": "DMsans",
-              "value": "DMsans, sans-serif"
+              "value": "PPTelegraf-Regular"
             },
             {
               "label": "Inter",
