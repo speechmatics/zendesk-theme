@@ -45,7 +45,7 @@ hr {
 }
 
 pre {
-  font-family: "DMsans";
+  font-family: $text_font;
   font-size: 1em;
 }
 
@@ -70,7 +70,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: "DMsans";
+  font-family: $text_font;
   font-size: 1em;
 }
 
@@ -125,7 +125,7 @@ button,
 [type=submit] {
   -webkit-box-pack: center;
   justify-content: center;
-  font-family: "DMsans";
+  font-family: $text_font;
   -webkit-box-align: center;
   align-items: center;
   font-weight: 600;
@@ -225,7 +225,7 @@ template {
 body {
   background-color: $background_color;
   color: $text_color;
-  font-family: "DMsans";
+  font-family: $text_font;
   font-size: 15px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -242,7 +242,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "PPTelegraf-Medium";
+  font-family: $heading_font;
   margin-top: 0;
 }
 
@@ -251,29 +251,29 @@ h1 {
 }
 
 h2 {
-  font-family: "PPTelegraf-Medium";
+  font-family: $heading_font;
   font-size: 22px;
   color: $text_color;
 ;
 }
 
 h3 {
-  font-family: "PPTelegraf-Medium";
+  font-family: $heading_font;
   font-size: 18px;
   font-weight: 600;
 }
 
 h4 {
-  font-family: "PPTelegraf-Medium";
+  font-family: $heading_font;
   font-size: 16px;
 }
 
 p {
-  font-family: "DMsans";
+  font-family: $text_font;
 }
 
 li {
-  font-family: "DMsans";
+  font-family: $text_font;
 }
 
 a {
@@ -432,7 +432,7 @@ ul {
 .request-button {
     -webkit-box-pack: center;
     justify-content: center;
-    font-family: "DMsans";
+    font-family: $text_font;
     -webkit-box-align: center;
     align-items: center;
     font-weight: 600;
@@ -1173,7 +1173,7 @@ table {
 /***** Footer *****/
 footer {
   font-size: .9rem;
-  font-family: "DMsans";
+  font-family: $text_font;
   line-height: 1.7rem;
   justify-content: center;
 }
@@ -2583,7 +2583,7 @@ text-decoration: none;
   word-break: break-word;
   word-wrap: break-word;
   display: flow-root;
-  font-family: "DMsans";
+  font-family: $text_font;
   line-height: 1.6;
   overflow-x: auto;
   text-align:left;
@@ -2894,7 +2894,7 @@ text-decoration: none;
   content: attr(data-follower-count);
   color: $brand_color;
   display: inline-block;
-  font-family: "PPTelegraf-Medium";
+  font-family: $heading_font;
   margin-left: 15px;
   padding-left: 10px;
   position: absolute;
@@ -3126,7 +3126,7 @@ text-decoration: none;
   margin-bottom: 30px;
 }
 .post-content {
-  font-family: "DMsans";
+  font-family: $text_font;
   line-height: 1.6;
   word-break: break-word;
 }
@@ -4863,7 +4863,7 @@ html[lang|=zh] .search-results-description em {
 .notification {
   border: 1px solid;
   display: table;
-  font-family: "DMsans";
+  font-family: $text_font;
   font-size: 12px;
   padding: 13px 15px;
   transition: height 0.2s;
@@ -5185,7 +5185,7 @@ html[dir=rtl] .notification-left-aligned {
   width: 300px;
   margin: 5px;
   text-align: center;
-  font-family: "DMsans";
+  font-family: $text_font;
   
 }
 
