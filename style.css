@@ -15,11 +15,11 @@
 }
 
 @font-face {
-  font-family: 'PPTelegraf-Medium';
-  src: url('$assets-PPTelegraf-Medium-woff'),
-         url('$assets-PPTelegraf-Medium-woff') format('woff'),
-         url('$assets-PPTelegraf-Medium-ttf') format('truetype'),
-         url('$assets-PPTelegraf-Medium-svg') format('svg');
+  font-family: 'PPTelegraf-Regular';
+  src: url('$assets-PPTelegraf-Regular-woff'),
+         url('$assets-PPTelegraf-Regular-woff') format('woff'),
+         url('$assets-PPTelegraf-Regular-ttf') format('truetype'),
+         url('$assets-PPTelegraf-Regular-svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
