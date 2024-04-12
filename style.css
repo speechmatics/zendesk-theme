@@ -1043,6 +1043,7 @@ table {
   display: flex;
   margin: auto;
   margin-bottom: 10px;
+  margin-top: 10px;
   list-style: none;
   width:fit-content;
   font-size:small;
