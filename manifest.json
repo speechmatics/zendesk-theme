@@ -148,7 +148,7 @@
           "options": [
             {
               "label": "PPTelegraf-Medium",
-              "value": "'PPTelegraf-Medium', sans-serif"
+              "value": "PPTelegraf-Medium, sans-serif"
             },
             {
               "label": "Inter",
@@ -229,7 +229,7 @@
           "options": [
             {
               "label": "DMsans",
-              "value": "'DMsans', sans-serif"
+              "value": "DMsans, sans-serif"
             },
             {
               "label": "Inter",
