@@ -237,7 +237,7 @@
             },
             {
               "label": "DMsans",
-              "value": "'DMsans.woff', sans-serif"
+              "value": "'DMsans', sans-serif"
             },
             {
               "label": "System",
