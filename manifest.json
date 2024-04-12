@@ -225,7 +225,7 @@
           "type": "list",
           "description": "text_font_description",
           "label": "text_font_label",
-          "value": "'DMsans', sans-serif",
+          "value": "DMsans, sans-serif",
           "options": [
             {
               "label": "DMsans",
