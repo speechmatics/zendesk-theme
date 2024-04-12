@@ -1,7 +1,7 @@
 {
   "name": "Github Import",
   "author": "Zendesk",
-  "version": "3.7.4.9.1",
+  "version": "3.7.4.9.2",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -144,11 +144,11 @@
           "type": "list",
           "description": "heading_font_description",
           "label": "heading_font_label",
-          "value": "PPTelegraf-Medium",
+          "value": "'PPTelegraf-Medium'",
           "options": [
             {
               "label": "PPTelegraf-Medium",
-              "value": "PPTelegraf-Medium"
+              "value": "'PPTelegraf-Medium'"
             },
             {
               "label": "DMsans, sans-serif",
@@ -156,7 +156,7 @@
             },
             {
               "label": "Inter",
-              "value": "Inter, sans-serif"
+              "value": "Inter, sans-serif, PPTelegraf-Medium"
             },
             {
               "label": "System",
