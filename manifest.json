@@ -140,11 +140,11 @@
       "label": "fonts_group_label",
       "variables": [
         {
-          "identifier": "heading_font",
-          "type": "list",
+          "identifier":"heading_font",
+          "type":"list",
           "description":"heading_font_desc",
-          "label": "heading_font_label",
-          "value": "Inter, sans-serif",
+          "label":"heading_font_label",
+          "value":"Inter, sans-serif",
           "options": [
             {
               "label": "Inter",
