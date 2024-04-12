@@ -310,21 +310,22 @@
                                             <a href="{{ url }}" class="blocks-item-link">
                                         {{/if}}
                                     {{/each}}
-                                    <span class="blocks-item-title"> <img class="section-page-images"
-                                            src="{{asset 'translation.png'}}" style="margin:auto" />
+                                    <span class="blocks-item-description">
+                                        {{#each articles}}
+                                            {{#if promoted}}
+                                                <h5 style="text-align: left;">
+                                                    {{ title }}
+                                                </h5>
+                                            {{/if}}
+                                        {{/each}}
+                                    </span>
+                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'translation.png'}}" style="margin:auto" />-->
                                         <h2>
                                             {{ name }}
                                         </h2>
                                     </span>
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h3>
-                                                    {{ title }}
-                                                </h3>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
+                                    
                                     </a>
                                     </div>
                                 </li>
