@@ -302,7 +302,7 @@
                 {{#each categories}}
                     {{#each sections}}
                         {{#each sections}}
-                            {{#is id 17494315442193}}
+                            {{#is id 23100069868049}}
                                 <li class="blocks-item">
                                     <div class="inner-border">
                                     {{#each articles}}
@@ -310,22 +310,21 @@
                                             <a href="{{ url }}" class="blocks-item-link">
                                         {{/if}}
                                     {{/each}}
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h5 style="text-align: left;">
-                                                    {{ title }}
-                                                </h5>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
                                     <span class="blocks-item-title"> <!--<img class="section-page-images"
-                                            src="{{asset 'chat-bubble-translate.svg'}}" style="margin:auto" />-->
+                                            src="{{asset 'languages_icon.svg'}}" style="margin:auto" />-->
                                         <h2>
                                             {{ name }}
                                         </h2>
                                     </span>
-                                    
+                                    <span class="blocks-item-description">
+                                        {{#each articles}}
+                                            {{#if promoted}}
+                                                <h3>
+                                                    {{ title }}
+                                                </h3>
+                                            {{/if}}
+                                        {{/each}}
+                                    </span>
                                     </a>
                                     </div>
                                 </li>
