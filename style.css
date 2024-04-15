@@ -48,7 +48,7 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none;
-  color: black;
+  /*color: black;*/
 }
 
 abbr[title] {
@@ -239,6 +239,8 @@ h5,
 h6 {
   font-family: "PPTelegraf-Medium";
   margin-top: 0;
+  color: $header_color;
+  font-weight: 500;
 }
 
 h1 {
@@ -248,6 +250,7 @@ h1 {
 h2 {
   font-family: "PPTelegraf-Medium";
   font-size: 22px;
+  /*color: $text_color;*/
 }
 
 h3 {
@@ -263,6 +266,7 @@ h4 {
 
 p {
   font-family: "DMsans";
+  
 }
 
 li {
@@ -442,6 +446,10 @@ ul {
     margin: 5px;
 }
 
+#status-page {
+  background: #0d3c48;
+  color: #fdfdfc;
+}
 
 .button-large, input[type=submit] {
   cursor: pointer;
@@ -761,6 +769,7 @@ table {
 .form .suggestion-list li a:visited {
   color: $visited_link_color;
 }
+
 
 /***** Header *****/
 .header {
@@ -1291,6 +1300,7 @@ text-decoration: none;
   position: absolute;
   right: 215px;
   
+  
 }
 
 .search {
@@ -1299,8 +1309,10 @@ text-decoration: none;
   border-style: solid;
   border-width: 1px;
   display: flex;
+  
   position: relative;
   transition: border 0.12s ease-in-out;
+  
 }
 .search:focus-within {
   border-color: $brand_color;
@@ -1313,6 +1325,7 @@ text-decoration: none;
 }
 .search-full input[type=search], .search-full .clear-button {
   border-color: #fff;
+  width: 60%;
 }
 .search input[type=search] {
   appearance: none;
@@ -1544,16 +1557,16 @@ text-decoration: none;
 }
 .blocks-item {
   background-color: #f9f9f9;
-  border: 1px solid $blocks_item_border_color;
+  /*border: 1px solid $blocks_item_border_color;*/
   border-radius: 0.5rem;
   box-sizing: border-box;
   color: $text_color;
   display: flex;
-  flex: 1 0 300px;
+  flex: 1 0 265px;
   margin: 0 0 30px;
-  max-width: 100%;
-  text-align: center;
-  box-shadow: 0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03);
+  max-width: 50%;
+  /*text-align: center;*/
+  /*box-shadow: 0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03);*/
 }
 
   
@@ -1566,7 +1579,7 @@ text-decoration: none;
   background-color: #e6f7ed;
 }
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: $brand_text_color;
+  /*color: $text_color;*/
   text-decoration: none;
 }
 .blocks-item-internal {
@@ -1583,23 +1596,23 @@ text-decoration: none;
   color: $text_color;
 }
 .blocks-item-link {
-  color: $text_color;
+  color: $header_color;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  
   justify-content: center;
   border-radius: inherit;
+  text-align: left;
   
 }
 
 .inner-border {
-  border-left: 2px solid #2a9d8f;
+  border-left: 2px solid #29a383;
   margin: 25px;
   margin-left: 30px;
   display: flex;
   flex: 1 0 200px;
-  
   max-width: 80%;
   text-align: left;
 }
@@ -1642,16 +1655,16 @@ text-decoration: none;
 }
 
 .blocks-item-faq {
-  border: 1px solid $blocks_item_border_color;
+  /*border: 1px solid $blocks_item_border_color;*/
   border-radius: 0.5rem;
   box-sizing: border-box;
   color: $text_color;
   display: flex;
-  flex: 1 0 340px;
+  flex: 1 0 300px;
   margin: 0 0 30px;
   max-width: 100%;
   text-align: center;
-  box-shadow: 0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03);
+  /*box-shadow: 0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03);*/
   align-content:flex-start;
   flex-wrap: wrap;
   padding-top:15px;
@@ -1664,7 +1677,7 @@ text-decoration: none;
   
    }
 .blocks-item-link:visited, .blocks-item-link:hover, .blocks-item-link:active {
-  color: inherit;
+  /*color: inherit;*/
   text-decoration: none;
 }
 .blocks-item-link:focus {
@@ -1675,11 +1688,26 @@ text-decoration: none;
 .blocks-item-title {
   margin-bottom: 0;
   font-size: 16px;
+    /*color: $heading_color;*/
 }
+
+.blocks-item-title > h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
 .blocks-item-description {
   margin: 0;
+ /* text-align:left;*/
+  color: $text_color;
+}
+
+.blocks-item-description > h5 {
+  color:#29a383;
+  font-weight: 500;
   text-align:left;
 }
+
 .blocks-item-description:not(:empty) {
   margin-top: 10px;
 }
@@ -1687,7 +1715,7 @@ text-decoration: none;
 /***** CSS Modifications for Category Images *****/
 .categories .blocks-item-link {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .blocks-item img, .category-page-images, .section-page-images {

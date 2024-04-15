@@ -41,7 +41,14 @@
           "type": "color",
           "description": "text_color_description",
           "label": "text_color_label",
-          "value": "rgba(102, 112, 133, 1)"
+          "value": "rgba(8, 8, 0, 0.63)"
+        },
+        {
+          "identifier": "header_color",
+          "type": "color",
+          "description": "head_color_description",
+          "label": "header_color_label",
+          "value": "rgb(33, 32, 28)"
         },
         {
           "identifier": "link_color",
