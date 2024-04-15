@@ -47,10 +47,10 @@
                         <li class="blocks-item">
                             <div class="inner-border">
                             <a href='{{ url }}' class="blocks-item-link">
-                                {{#is id 7251709213329}}<img class="" src="{{ asset 'downloads.png' }}" />
+                              <!--  {{#is id 7251709213329}}<img class="" src="{{ asset 'downloads.png' }}" />
                                 {{/is}}
                                 {{#is id 4419675487889}}<img class="" src="{{ asset 'questions.png' }}" />
-                                {{/is}}
+                                {{/is}}-->
                                 <span class="blocks-item-title">
 
                                     <h2>{{ name }}</h2>
@@ -93,21 +93,22 @@
                                             <a href="{{ url }}" class="blocks-item-link">
                                         {{/if}}
                                     {{/each}}
-                                    <span class="blocks-item-title"> <img class="section-page-images"
-                                            src="{{asset 'movie.png'}}" style="margin:auto" />
+                                    <span class="blocks-item-description">
+                                        {{#each articles}}
+                                            {{#if promoted}}
+                                                <h5>
+                                                    {{ title }}
+                                                </h5>
+                                            {{/if}}
+                                        {{/each}}
+                                    </span>
+                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'movie.png'}}" style="margin:auto" />-->
                                         <h2>
                                             {{ name }}
                                         </h2>
                                     </span>
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h3>
-                                                    {{ title }}
-                                                </h3>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
+                                    
                                     </a>
                                     </div>
                                 </li>
@@ -129,21 +130,22 @@
                                             <a href="{{ url }}" class="blocks-item-link">
                                         {{/if}}
                                     {{/each}}
-                                    <span class="blocks-item-title"> <img class="section-page-images"
-                                            src="{{asset 'microphone.png'}}" style="margin:auto" />
+                                    <span class="blocks-item-description">
+                                        {{#each articles}}
+                                            {{#if promoted}}
+                                                <h5>
+                                                    {{ title }}
+                                                </h5>
+                                            {{/if}}
+                                        {{/each}}
+                                    </span>
+                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'microphone.png'}}" style="margin:auto" />-->
                                         <h2>
                                             {{ name }}
                                         </h2>
                                     </span>
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h3>
-                                                    {{ title }}
-                                                </h3>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
+                                    
                                     </a>
                                     </div>
                                 </li>
@@ -165,21 +167,22 @@
                                             <a href="{{ url }}" class="blocks-item-link">
                                         {{/if}}
                                     {{/each}}
-                                    <span class="blocks-item-title"> <img class="section-page-images"
-                                            src="{{asset 'movie.png'}}" style="margin:auto" />
+                                    <span class="blocks-item-description">
+                                        {{#each articles}}
+                                            {{#if promoted}}
+                                                <h5>
+                                                    {{ title }}
+                                                </h5>
+                                            {{/if}}
+                                        {{/each}}
+                                    </span>
+                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'movie.png'}}" style="margin:auto" />-->
                                         <h2>
                                             {{ name }}
                                         </h2>
                                     </span>
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h3>
-                                                    {{ title }}
-                                                </h3>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
+                                    
                                     </a>
                                     </div>
                                 </li>
@@ -201,21 +204,22 @@
                                             <a href="{{ url }}" class="blocks-item-link">
                                         {{/if}}
                                     {{/each}}
-                                    <span class="blocks-item-title"> <img class="section-page-images"
-                                            src="{{asset 'microphone.png'}}" style="margin:auto" />
+                                    <span class="blocks-item-description">
+                                        {{#each articles}}
+                                            {{#if promoted}}
+                                                <h5>
+                                                    {{ title }}
+                                                </h5>
+                                            {{/if}}
+                                        {{/each}}
+                                    </span>
+                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'microphone.png'}}" style="margin:auto" />-->
                                         <h2>
                                             {{ name }}
                                         </h2>
                                     </span>
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h3>
-                                                    {{ title }}
-                                                </h3>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
+                                    
                                     </a>
                                     </div>
                                 </li>
@@ -238,21 +242,22 @@
                                             <a href="{{ url }}" class="blocks-item-link">
                                         {{/if}}
                                     {{/each}}
-                                    <span class="blocks-item-title"> <img class="section-page-images"
-                                            src="{{asset 'ai-network.png'}}" style="margin:auto" />
+                                    <span class="blocks-item-description">
+                                        {{#each articles}}
+                                            {{#if promoted}}
+                                                <h5>
+                                                    {{ title }}
+                                                </h5>
+                                            {{/if}}
+                                        {{/each}}
+                                    </span>
+                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'ai-network.png'}}" style="margin:auto" />-->
                                         <h2>
                                             {{ name }}
                                         </h2>
                                     </span>
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h3>
-                                                    {{ title }}
-                                                </h3>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
+                                    
                                     </a>
                                     </div>
                                 </li>
@@ -274,21 +279,22 @@
                                             <a href="{{ url }}" class="blocks-item-link">
                                         {{/if}}
                                     {{/each}}
-                                    <span class="blocks-item-title"> <img class="section-page-images"
-                                            src="{{asset 'lid.png'}}" style="margin:auto" />
+                                     <span class="blocks-item-description">
+                                        {{#each articles}}
+                                            {{#if promoted}}
+                                                <h5>
+                                                    {{ title }}
+                                                </h5>
+                                            {{/if}}
+                                        {{/each}}
+                                    </span>
+                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'lid.png'}}" style="margin:auto" />-->
                                         <h2>
                                             {{ name }}
                                         </h2>
                                     </span>
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h3>
-                                                    {{ title }}
-                                                </h3>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
+                                   
                                     </a>
                                     </div>
                                 </li>
@@ -313,7 +319,7 @@
                                     <span class="blocks-item-description">
                                         {{#each articles}}
                                             {{#if promoted}}
-                                                <h5 style="text-align: left;">
+                                                <h5>
                                                     {{ title }}
                                                 </h5>
                                             {{/if}}
