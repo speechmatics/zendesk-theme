@@ -1051,6 +1051,7 @@ table {
   display: flex;
   margin: auto;
   margin-bottom: 10px;
+  margin-top: 10px;
   list-style: none;
   width:fit-content;
   font-size:small;
@@ -1704,6 +1705,7 @@ text-decoration: none;
 .blocks-item-description > h5 {
   color:#29a383;
   font-weight: 500;
+  text-align:left;
 }
 
 .blocks-item-description:not(:empty) {
