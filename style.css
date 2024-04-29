@@ -1591,13 +1591,13 @@ text-decoration: none;
     margin: 0 15px 30px;
   }
 }
-.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
+/* .blocks-item:hover, .blocks-item:focus, .blocks-item:active {
   background-color: #e6f7ed;
 }
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  /*color: $text_color;*/
+  /*color: $text_color;
   text-decoration: none;
-}
+} */
 .blocks-item-internal {
   background-color: transparent;
   border: 1px solid #ddd;
@@ -5305,7 +5305,6 @@ padding-left:0px;
 
   .row {
     padding: 5px;
-    background: white;
 }
 
 .block {
