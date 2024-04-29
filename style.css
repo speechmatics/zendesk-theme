@@ -1535,7 +1535,7 @@ text-decoration: none;
   justify-content: flex-start;
   list-style: none;
   padding: 0;
-
+  cursor: pointer;
 }
 
 .blocks-list-faq {
@@ -1569,6 +1569,22 @@ text-decoration: none;
   /*box-shadow: 0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03);*/
 }
 
+.blocks-item-faq {
+  /*border: 1px solid $blocks_item_border_color;*/
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: $text_color;
+  display: flex;
+  flex: 1 0 300px;
+  margin: 0 0 30px;
+  max-width: 100%;
+  text-align: center;
+  /*box-shadow: 0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03);*/
+  align-content:flex-start;
+  flex-wrap: wrap;
+  padding-top:15px;
+  background-color: #f9f9f9;
+}
   
 @media (min-width: 768px) {
   .blocks-item {
@@ -1654,21 +1670,7 @@ text-decoration: none;
   font-family: "Courier New", "Courier", monospace;
 }
 
-.blocks-item-faq {
-  /*border: 1px solid $blocks_item_border_color;*/
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-  color: $text_color;
-  display: flex;
-  flex: 1 0 300px;
-  margin: 0 0 30px;
-  max-width: 100%;
-  text-align: center;
-  /*box-shadow: 0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03);*/
-  align-content:flex-start;
-  flex-wrap: wrap;
-  padding-top:15px;
-}
+
 
 .containerTab {
   text-align:left;
