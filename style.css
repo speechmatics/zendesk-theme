@@ -1631,6 +1631,8 @@ text-decoration: none;
   flex: 1 0 200px;
   max-width: 80%;
   text-align: left;
+  background-color: #f9f9f9;
+  border: #f9f9f9;
 }
 
 
