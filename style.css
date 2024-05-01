@@ -5224,15 +5224,13 @@ html[dir=rtl] .notification-left-aligned {
 /** Sidebar **/
 
 .sidenav {
-  height: 100%;
-  width: 15%;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #f9f9f9;
   overflow-x: hidden;
-  padding-top: 80px;
+  padding-top: 20px;
   padding-left: 25px;
   scrollbar-width:thin;
   scrollbar-color: #fdfdfc;
