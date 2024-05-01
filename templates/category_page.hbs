@@ -12,6 +12,33 @@
     </div>
   </nav>
 
+<div class="sidenav">
+            <ul>
+                {{#each categories}}
+                    
+                        <li class="sidenav-item">
+                            
+                            <a href='{{ url }}' class="blocks-item-link">
+                               
+                                <span class="sidenav-item-title-category">
+
+                                    <h4>{{ name }}</h4>
+                                </span>
+                                  
+                            </a>
+                              {{#each sections}}
+                              <a href='{{ url }}' class="blocks-item-link">
+                                <span class="sidenav-item-title-section">
+
+                                    <h3>{{ name }}</h3>
+                                </span>
+                                </a>
+                                {{/each}}
+                        </li>
+                        {{/each}}
+                        </ul>
+                        </div>
+                        
   <div class="category-container">
     <div class="category-content">
       <header class="page-header">
@@ -39,6 +66,8 @@
             100% 55%; /* Size for the second image */
     }
 </style>
+
+
 
       <section class="section knowledge-base">
         <h2 class="visibility-hidden">{{ t 'categories' }}</h2>

@@ -20,7 +20,7 @@
 <style>
     body {
         background: 
-            url({{asset 'Backgroundecho-Jadecopy3.png'}}) 50% -15% no-repeat,
+            url({{asset 'Backgroundecho-Jadecopy3.png'}}) 50% -10% no-repeat,
             url({{asset 'Backgroundecho-Orangecopy5.png'}}) 50% 140% no-repeat;
         background-size: 
             100% 55%, /* Size for the first image */
@@ -28,6 +28,32 @@
     }
 </style>
 
+<div class="sidenav">
+            <ul>
+                {{#each categories}}
+                    
+                        <li class="sidenav-item">
+                            
+                            <a href='{{ url }}' class="blocks-item-link">
+                               
+                                <span class="sidenav-item-title-category">
+
+                                    <h4>{{ name }}</h4>
+                                </span>
+                                  
+                            </a>
+                              {{#each sections}}
+                              <a href='{{ url }}' class="blocks-item-link">
+                                <span class="sidenav-item-title-section">
+
+                                    <h3>{{ name }}</h3>
+                                </span>
+                                </a>
+                                {{/each}}
+                        </li>
+                        {{/each}}
+                        </ul>
+                        </div>
 
 <div class="container">
     <section class="section knowledge-base">
@@ -87,7 +113,7 @@
                         {{#each sections}}
                             {{#is id 7251702265873}}
                                 <li class="blocks-item">
-                                    <div class="inner-border">
+                                    <div class="inner-border-releases">
                                     {{#each articles}}
                                         {{#if promoted}}
                                             <a href="{{ url }}" class="blocks-item-link">
@@ -124,7 +150,7 @@
                         {{#each sections}}
                             {{#is id 7251718438289}}
                                 <li class="blocks-item">
-                                    <div class="inner-border">
+                                    <div class="inner-border-releases">
                                     {{#each articles}}
                                         {{#if promoted}}
                                             <a href="{{ url }}" class="blocks-item-link">
@@ -161,7 +187,7 @@
                         {{#each sections}}
                             {{#is id 7251686780049}}
                                 <li class="blocks-item">
-                                    <div class="inner-border">
+                                    <div class="inner-border-releases">
                                     {{#each articles}}
                                         {{#if promoted}}
                                             <a href="{{ url }}" class="blocks-item-link">
@@ -198,7 +224,7 @@
                         {{#each sections}}
                             {{#is id 7251718480785}}
                                 <li class="blocks-item">
-                                    <div class="inner-border">
+                                    <div class="inner-border-releases">
                                     {{#each articles}}
                                         {{#if promoted}}
                                             <a href="{{ url }}" class="blocks-item-link">
@@ -236,7 +262,7 @@
                         {{#each sections}}
                             {{#is id 14280571789329}}
                                 <li class="blocks-item">
-                                    <div class="inner-border">
+                                    <div class="inner-border-releases">
                                     {{#each articles}}
                                         {{#if promoted}}
                                             <a href="{{ url }}" class="blocks-item-link">
@@ -273,7 +299,7 @@
                         {{#each sections}}
                             {{#is id 7402921292049}}
                                 <li class="blocks-item">
-                                    <div class="inner-border">
+                                    <div class="inner-border-releases">
                                     {{#each articles}}
                                         {{#if promoted}}
                                             <a href="{{ url }}" class="blocks-item-link">
@@ -311,7 +337,7 @@
                         {{#each sections}}
                             {{#is id 17494315442193}}
                                 <li class="blocks-item">
-                                    <div class="inner-border">
+                                    <div class="inner-border-releases">
                                     {{#each articles}}
                                         {{#if promoted}}
                                             <a href="{{ url }}" class="blocks-item-link">
