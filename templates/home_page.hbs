@@ -2,7 +2,7 @@
 
 <div>
     <span class="news-banner">
-        
+
         <object>
             <div class="announcement-text" id="announcementContent"></div>
         </object>
@@ -10,21 +10,22 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Include the JavaScript file -->
 <script src="{{asset 'announcements.js'}}"></script>
+<!-- Include the JavaScript file -->
 
 <section id="main-content" class="section hero">
-    
+
 </section>
 
 <style>
     body {
-        background: 
-            url({{asset 'Backgroundecho-Jadecopy3.png'}}) 50% -15% no-repeat,
-            url({{asset 'Backgroundecho-Orangecopy5.png'}}) 50% 140% no-repeat;
-        background-size: 
-            100% 55%, /* Size for the first image */
-            100% 55%; /* Size for the second image */
+        background: url({{asset 'Backgroundecho-Jadecopy3.png'}}) 50% -15% no-repeat,
+        url({{asset 'Backgroundecho-Orangecopy5.png'}}) 50% 140% no-repeat;
+        background-size:
+            100% 55%,
+            /* Size for the first image */
+            100% 55%;
+        /* Size for the second image */
     }
 </style>
 
@@ -46,17 +47,18 @@
                     {{#if ../has_multiple_categories}}
                         <li class="blocks-item">
                             <div class="inner-border">
-                            <a href='{{ url }}' class="blocks-item-link">
-                                {{#is id 7251709213329}}<img class="" src="{{ asset 'cloud-download.svg' }}" />
-                                {{/is}}
-                                {{#is id 4419675487889}}<img class="" src="{{ asset 'chat-bubble-question.svg' }}" />
-                                {{/is}}
-                                <span class="blocks-item-title">
+                                <a href='{{ url }}' class="blocks-item-link">
+                                    {{#is id 7251709213329}}<img class="" src="{{ asset 'cloud-download.svg' }}" />
+                                    {{/is}}
+                                    {{#is id 4419675487889}}<img class=""
+                                            src="{{ asset 'chat-bubble-question.svg' }}" />
+                                    {{/is}}
+                                    <span class="blocks-item-title">
 
-                                    <h2>{{ name }}</h2>
-                                </span>
-                                <span class="blocks-item-description">{{ excerpt description }}</span>
-                            </a>
+                                        <h2>{{ name }}</h2>
+                                    </span>
+                                    <span class="blocks-item-description">{{ excerpt description }}</span>
+                                </a>
                         </li>
                         {{ else }}
                         {{#each sections}}
@@ -68,281 +70,281 @@
                                     </span>
                                     <span class="blocks-item-description">{{ excerpt description }}</span>
                                 </a>
-                            </div>
-                            </li>
-                        {{/each}}
-                    {{/if}}
-                {{/each}}
-            </ul>
-            {{ pagination }}
-
-            <h1 style="margin:50px">{{ 'New Releases' }}</h1>
-
-            {{!BVA}}
-
-            <ul class="blocks-list">
-
-                {{#each categories}}
-                    {{#each sections}}
-                        {{#each sections}}
-                            {{#is id 7251702265873}}
-                                <li class="blocks-item">
-                                    <div class="inner-border">
-                                    {{#each articles}}
-                                        {{#if promoted}}
-                                            <a href="{{ url }}" class="blocks-item-link">
-                                        {{/if}}
-                                    {{/each}}
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h5>
-                                                    {{ title }}
-                                                </h5>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
-                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
-                                            src="{{asset 'movie.png'}}" style="margin:auto" />-->
-                                        <h2>
-                                            {{ name }}
-                                        </h2>
-                                    </span>
-                                    
-                                    </a>
-                                    </div>
-                                </li>
-                            {{/is}}
-                        {{/each}}
-                    {{/each}}
-                {{/each}}
-
-                {{!RTVA}}
-
-                {{#each categories}}
-                    {{#each sections}}
-                        {{#each sections}}
-                            {{#is id 7251718438289}}
-                                <li class="blocks-item">
-                                    <div class="inner-border">
-                                    {{#each articles}}
-                                        {{#if promoted}}
-                                            <a href="{{ url }}" class="blocks-item-link">
-                                        {{/if}}
-                                    {{/each}}
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h5>
-                                                    {{ title }}
-                                                </h5>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
-                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
-                                            src="{{asset 'microphone.png'}}" style="margin:auto" />-->
-                                        <h2>
-                                            {{ name }}
-                                        </h2>
-                                    </span>
-                                    
-                                    </a>
-                                    </div>
-                                </li>
-                            {{/is}}
-                        {{/each}}
-                    {{/each}}
-                {{/each}}
-
-                {{!BC}}
-
-                {{#each categories}}
-                    {{#each sections}}
-                        {{#each sections}}
-                            {{#is id 7251686780049}}
-                                <li class="blocks-item">
-                                    <div class="inner-border">
-                                    {{#each articles}}
-                                        {{#if promoted}}
-                                            <a href="{{ url }}" class="blocks-item-link">
-                                        {{/if}}
-                                    {{/each}}
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h5>
-                                                    {{ title }}
-                                                </h5>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
-                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
-                                            src="{{asset 'movie.png'}}" style="margin:auto" />-->
-                                        <h2>
-                                            {{ name }}
-                                        </h2>
-                                    </span>
-                                    
-                                    </a>
-                                    </div>
-                                </li>
-                            {{/is}}
-                        {{/each}}
-                    {{/each}}
-                {{/each}}
-
-                {{!RTC}}
-
-                {{#each categories}}
-                    {{#each sections}}
-                        {{#each sections}}
-                            {{#is id 7251718480785}}
-                                <li class="blocks-item">
-                                    <div class="inner-border">
-                                    {{#each articles}}
-                                        {{#if promoted}}
-                                            <a href="{{ url }}" class="blocks-item-link">
-                                        {{/if}}
-                                    {{/each}}
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h5>
-                                                    {{ title }}
-                                                </h5>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
-                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
-                                            src="{{asset 'microphone.png'}}" style="margin:auto" />-->
-                                        <h2>
-                                            {{ name }}
-                                        </h2>
-                                    </span>
-                                    
-                                    </a>
-                                    </div>
-                                </li>
-                            {{/is}}
-                        {{/each}}
-                    {{/each}}
-                {{/each}}
-
-
-                {{!GPU Inference Container}}
-
-                {{#each categories}}
-                    {{#each sections}}
-                        {{#each sections}}
-                            {{#is id 14280571789329}}
-                                <li class="blocks-item">
-                                    <div class="inner-border">
-                                    {{#each articles}}
-                                        {{#if promoted}}
-                                            <a href="{{ url }}" class="blocks-item-link">
-                                        {{/if}}
-                                    {{/each}}
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h5>
-                                                    {{ title }}
-                                                </h5>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
-                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
-                                            src="{{asset 'ai-network.png'}}" style="margin:auto" />-->
-                                        <h2>
-                                            {{ name }}
-                                        </h2>
-                                    </span>
-                                    
-                                    </a>
-                                    </div>
-                                </li>
-                            {{/is}}
-                        {{/each}}
-                    {{/each}}
-                {{/each}}
-
-                {{!LiD}}
-
-                {{#each categories}}
-                    {{#each sections}}
-                        {{#each sections}}
-                            {{#is id 7402921292049}}
-                                <li class="blocks-item">
-                                    <div class="inner-border">
-                                    {{#each articles}}
-                                        {{#if promoted}}
-                                            <a href="{{ url }}" class="blocks-item-link">
-                                        {{/if}}
-                                    {{/each}}
-                                     <span class="blocks-item-description">
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h5>
-                                                    {{ title }}
-                                                </h5>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
-                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
-                                            src="{{asset 'lid.png'}}" style="margin:auto" />-->
-                                        <h2>
-                                            {{ name }}
-                                        </h2>
-                                    </span>
-                                   
-                                    </a>
-                                    </div>
-                                </li>
-                            {{/is}}
-                        {{/each}}
-                    {{/each}}
-                {{/each}}
-
-                {{!GPU Translation Inference Container}}
-
-                {{#each categories}}
-                    {{#each sections}}
-                        {{#each sections}}
-                            {{#is id 17494315442193}}
-                                <li class="blocks-item">
-                                    <div class="inner-border">
-                                    {{#each articles}}
-                                        {{#if promoted}}
-                                            <a href="{{ url }}" class="blocks-item-link">
-                                        {{/if}}
-                                    {{/each}}
-                                    <span class="blocks-item-description">
-                                        {{#each articles}}
-                                            {{#if promoted}}
-                                                <h5>
-                                                    {{ title }}
-                                                </h5>
-                                            {{/if}}
-                                        {{/each}}
-                                    </span>
-                                    <span class="blocks-item-title"> <!--<img class="section-page-images"
-                                            src="{{asset 'translation.png'}}" style="margin:auto" />-->
-                                        <h2>
-                                            {{ name }}
-                                        </h2>
-                                    </span>
-                                    
-                                    </a>
-                                    </div>
-                                </li>
-                            {{/is}}
-                        {{/each}}
-                    {{/each}}
-                {{/each}}
-
 </div>
-            </ul>
-        </section>
-    </section>
+</li>
+{{/each}}
+{{/if}}
+{{/each}}
+</ul>
+{{ pagination }}
+
+<h1 style="margin:50px">{{ 'New Releases' }}</h1>
+
+{{!BVA}}
+
+<ul class="blocks-list">
+
+    {{#each categories}}
+        {{#each sections}}
+            {{#each sections}}
+                {{#is id 7251702265873}}
+                    <li class="blocks-item">
+                        <div class="inner-border">
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <a href="{{ url }}" class="blocks-item-link">
+                                {{/if}}
+                            {{/each}}
+                            <span class="blocks-item-description">
+                                {{#each articles}}
+                                    {{#if promoted}}
+                                        <h5>
+                                            {{ title }}
+                                        </h5>
+                                    {{/if}}
+                                {{/each}}
+                            </span>
+                            <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'movie.png'}}" style="margin:auto" />-->
+                                <h2>
+                                    {{ name }}
+                                </h2>
+                            </span>
+
+                            </a>
+                        </div>
+                    </li>
+                {{/is}}
+            {{/each}}
+        {{/each}}
+    {{/each}}
+
+    {{!RTVA}}
+
+    {{#each categories}}
+        {{#each sections}}
+            {{#each sections}}
+                {{#is id 7251718438289}}
+                    <li class="blocks-item">
+                        <div class="inner-border">
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <a href="{{ url }}" class="blocks-item-link">
+                                {{/if}}
+                            {{/each}}
+                            <span class="blocks-item-description">
+                                {{#each articles}}
+                                    {{#if promoted}}
+                                        <h5>
+                                            {{ title }}
+                                        </h5>
+                                    {{/if}}
+                                {{/each}}
+                            </span>
+                            <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'microphone.png'}}" style="margin:auto" />-->
+                                <h2>
+                                    {{ name }}
+                                </h2>
+                            </span>
+
+                            </a>
+                        </div>
+                    </li>
+                {{/is}}
+            {{/each}}
+        {{/each}}
+    {{/each}}
+
+    {{!BC}}
+
+    {{#each categories}}
+        {{#each sections}}
+            {{#each sections}}
+                {{#is id 7251686780049}}
+                    <li class="blocks-item">
+                        <div class="inner-border">
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <a href="{{ url }}" class="blocks-item-link">
+                                {{/if}}
+                            {{/each}}
+                            <span class="blocks-item-description">
+                                {{#each articles}}
+                                    {{#if promoted}}
+                                        <h5>
+                                            {{ title }}
+                                        </h5>
+                                    {{/if}}
+                                {{/each}}
+                            </span>
+                            <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'movie.png'}}" style="margin:auto" />-->
+                                <h2>
+                                    {{ name }}
+                                </h2>
+                            </span>
+
+                            </a>
+                        </div>
+                    </li>
+                {{/is}}
+            {{/each}}
+        {{/each}}
+    {{/each}}
+
+    {{!RTC}}
+
+    {{#each categories}}
+        {{#each sections}}
+            {{#each sections}}
+                {{#is id 7251718480785}}
+                    <li class="blocks-item">
+                        <div class="inner-border">
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <a href="{{ url }}" class="blocks-item-link">
+                                {{/if}}
+                            {{/each}}
+                            <span class="blocks-item-description">
+                                {{#each articles}}
+                                    {{#if promoted}}
+                                        <h5>
+                                            {{ title }}
+                                        </h5>
+                                    {{/if}}
+                                {{/each}}
+                            </span>
+                            <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'microphone.png'}}" style="margin:auto" />-->
+                                <h2>
+                                    {{ name }}
+                                </h2>
+                            </span>
+
+                            </a>
+                        </div>
+                    </li>
+                {{/is}}
+            {{/each}}
+        {{/each}}
+    {{/each}}
+
+
+    {{!GPU Inference Container}}
+
+    {{#each categories}}
+        {{#each sections}}
+            {{#each sections}}
+                {{#is id 14280571789329}}
+                    <li class="blocks-item">
+                        <div class="inner-border">
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <a href="{{ url }}" class="blocks-item-link">
+                                {{/if}}
+                            {{/each}}
+                            <span class="blocks-item-description">
+                                {{#each articles}}
+                                    {{#if promoted}}
+                                        <h5>
+                                            {{ title }}
+                                        </h5>
+                                    {{/if}}
+                                {{/each}}
+                            </span>
+                            <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'ai-network.png'}}" style="margin:auto" />-->
+                                <h2>
+                                    {{ name }}
+                                </h2>
+                            </span>
+
+                            </a>
+                        </div>
+                    </li>
+                {{/is}}
+            {{/each}}
+        {{/each}}
+    {{/each}}
+
+    {{!LiD}}
+
+    {{#each categories}}
+        {{#each sections}}
+            {{#each sections}}
+                {{#is id 7402921292049}}
+                    <li class="blocks-item">
+                        <div class="inner-border">
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <a href="{{ url }}" class="blocks-item-link">
+                                {{/if}}
+                            {{/each}}
+                            <span class="blocks-item-description">
+                                <span class="blocks-item-description">
+                                    {{#each articles}}
+                                        {{#if promoted}}
+                                            <h5>
+                                                {{ title }}
+                                            </h5>
+                                        {{/if}}
+                                    {{/each}}
+                                </span>
+                                <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'lid.png'}}" style="margin:auto" />-->
+                                    <h2>
+                                        {{ name }}
+                                    </h2>
+                                </span>
+
+                                </a>
+                        </div>
+                    </li>
+                {{/is}}
+            {{/each}}
+        {{/each}}
+    {{/each}}
+
+    {{!GPU Translation Inference Container}}
+
+    {{#each categories}}
+        {{#each sections}}
+            {{#each sections}}
+                {{#is id 17494315442193}}
+                    <li class="blocks-item">
+                        <div class="inner-border">
+                            {{#each articles}}
+                                {{#if promoted}}
+                                    <a href="{{ url }}" class="blocks-item-link">
+                                {{/if}}
+                            {{/each}}
+                            <span class="blocks-item-description">
+                                {{#each articles}}
+                                    {{#if promoted}}
+                                        <h5>
+                                            {{ title }}
+                                        </h5>
+                                    {{/if}}
+                                {{/each}}
+                            </span>
+                            <span class="blocks-item-title"> <!--<img class="section-page-images"
+                                            src="{{asset 'translation.png'}}" style="margin:auto" />-->
+                                <h2>
+                                    {{ name }}
+                                </h2>
+                            </span>
+
+                            </a>
+                        </div>
+                    </li>
+                {{/is}}
+            {{/each}}
+        {{/each}}
+    {{/each}}
+
+    </div>
+</ul>
+</section>
+</section>
 </div>

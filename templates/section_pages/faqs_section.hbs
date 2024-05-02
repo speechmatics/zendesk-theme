@@ -1,4 +1,5 @@
 <div class="container-divider"></div>
+<div id="sidebar-container"></div>
 <div class="container">
   <nav class="sub-nav">
     {{breadcrumbs}}
@@ -11,6 +12,12 @@
       {{search scoped=settings.scoped_kb_search submit=false}}
     </div>
   </nav>
+
+    <!-- Dynamic Sidebar -->
+  <div class="sidenav">
+    <ul id="dynamicCategoryList">Loading categories...</ul>
+  </div>
+
 
   <div class="section-container">
     <section id="main-content" class="section-content">
@@ -110,10 +117,9 @@
       {{pagination "section.articles"}}
 
     </section>
+    <script src="{{asset 'sidenav.js'}}"></script>
   </div>
 </div>
-
-
 
 </div>
 </div>

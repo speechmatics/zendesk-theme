@@ -6,12 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
         while (hasNext) {
             let response = await fetch(url);
             if (!response.ok) {
+                console.error('Failed to load data from API', response.statusText);
                 throw new Error('Failed to load data from API');
             }
             let data = await response.json();
             results = results.concat(data.articles || data.sections || data.categories);
             url = data.next_page;
-            hasNext = !!url; // Continue only if there is a next page
+            hasNext = !!url;
         }
 
         return results;
@@ -22,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const articles = await fetchAll('/api/v2/help_center/articles');
             const sections = await fetchAll('/api/v2/help_center/sections');
             const categories = await fetchAll('/api/v2/help_center/categories');
+            console.log('Data fetched:', { articles, sections, categories });  // Debugging log
             const accessibleSections = filterSectionsByArticles(sections, articles);
-
             displayCategoriesAndSections(categories, accessibleSections);
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -60,47 +61,49 @@ document.addEventListener("DOMContentLoaded", () => {
                         </li>`;
             }
         });
+
         container.innerHTML = html;
-        adjustSidebarLayout();
+        console.log('Sidebar updated.');  // Debugging log
     }
+
+    fetchDataAndDisplayInSidebar();
+    adjustSidebarLayout();
 
     function adjustSidebarLayout() {
         const header = document.querySelector("header");
         const footer = document.querySelector("footer");
         const sidebar = document.querySelector(".sidenav");
-        const categoryContainer = document.querySelector(".category-container");
+        // Find either container, prioritizing category if both are present
+        const mainContainer = document.querySelector(".category-container") || document.querySelector(".section-container") || document.querySelector(".article-container");
     
-        if (!header || !footer || !sidebar || !categoryContainer) {
+        if (!header || !footer || !sidebar || !mainContainer) {
             console.warn("Layout adjustment skipped: Some elements are not available.");
-            return; // Ensure all elements are available
+            return;
         }
     
-        // Function to adjust the sidebar height and position
         function adjustHeight() {
-            const headerHeight = header.offsetHeight;
-            const headerTop = header.offsetTop;
-            const footerPosition = footer.offsetTop;
+            const headerRect = header.getBoundingClientRect();
+            const footerRect = footer.getBoundingClientRect();
+            
+            // Calculate top position right below the header considering scroll offset
+            const sidebarTop = window.scrollY + headerRect.bottom;
+            // Calculate the new height considering the top of the footer
+            const sidebarHeight = footerRect.top - headerRect.bottom;
     
-            const sidebarTop = headerTop + headerHeight; // Calculate top position right below the header
-            const sidebarNewHeight = footerPosition - sidebarTop; // Adjust height to stretch just up to the footer
-    
-            sidebar.style.position = 'absolute'; // Make sure sidebar is positioned absolutely
-            sidebar.style.top = `${sidebarTop}px`;
-            sidebar.style.height = `${sidebarNewHeight}px`;
-            categoryContainer.style.marginLeft = `${sidebar.offsetWidth}px`;
+            sidebar.style.position = 'fixed'; // Use fixed positioning to handle scrolling
+            sidebar.style.top = `${headerRect.bottom}px`;
+            sidebar.style.height = `${sidebarHeight}px`;
+            mainContainer.style.marginLeft = `${sidebar.offsetWidth}px`;
         }
     
-        // Adjust the height initially and on window resize
         adjustHeight();
         window.addEventListener("resize", adjustHeight);
+        window.addEventListener("scroll", adjustHeight); // Ensure the sidebar adjusts on scroll
     
-        // Setup a mutation observer to re-adjust the layout when sidebar content changes
-        const observer = new MutationObserver(() => {
-            adjustHeight();
-        });
-        observer.observe(sidebar, { childList: true, subtree: true });
+        // Observe changes in the layout that might affect the size or position of the header or footer
+        const observer = new ResizeObserver(adjustHeight);
+        observer.observe(header);
+        observer.observe(footer);
+        observer.observe(mainContainer); // Observing main container for any changes that might require an adjustment
     }
-
-    fetchDataAndDisplayInSidebar();
-    adjustSidebarLayout();
 });
