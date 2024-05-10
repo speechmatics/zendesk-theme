@@ -69,6 +69,41 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchDataAndDisplayInSidebar();
     adjustSidebarLayout();
 
+
+    setTimeout(() => {
+        checkActiveSidebarLinks();
+    }, 2000);
+
+function checkActiveSidebarLinks() {
+    // Get the current URL's pathname
+    const currentPath = window.location.pathname;
+
+    // Select all sidebar links; adjust the selector as needed for your specific HTML structure
+    const sidebarLinks = document.querySelectorAll('.sidenav-item a');
+
+    // Iterate over each link in the sidebar
+    sidebarLinks.forEach(link => {
+        // Create a URL object from the link's href attribute, assuming absolute URLs or provide a base URL
+        const linkUrl = new URL(link.href, window.location.origin);
+
+        // Compare the pathname of the link's URL with the current URL's pathname
+        if (linkUrl.pathname === currentPath) {
+            console.log(`Active link found: ${link.href}`);
+
+            // Add the 'sidenav-item-title-section-active' class to the link
+            const titleElement = link.querySelector('.sidenav-item-title-section');
+            if (titleElement) {
+                // If the specific span isn't found, add the class to the <a> element itself
+                link.classList.remove("sidenav-item-title-section");
+                link.classList.add('sidenav-item-title-section-active');
+            }
+        } else {
+            console.log(`Not active link: ${link.href}`);
+        }
+    });
+}
+
+
     function adjustSidebarLayout() {
         const header = document.querySelector("header");
         const footer = document.querySelector("footer");
