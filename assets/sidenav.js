@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const footer = document.querySelector("footer");
         const sidebar = document.querySelector(".sidenav");
         // Find either container, prioritizing category if both are present
-        const mainContainer = document.querySelector(".category-container") || document.querySelector(".section-container") || document.querySelector(".article-container");
+        const mainContainer = document.querySelector(".category-container") || document.querySelector(".section-container") || document.querySelector(".article-container")|| document.querySelector(".blocks-item-faq");
     
         if (!header || !footer || !sidebar || !mainContainer) {
             console.warn("Layout adjustment skipped: Some elements are not available.");
@@ -93,7 +93,16 @@ document.addEventListener("DOMContentLoaded", () => {
             sidebar.style.position = 'fixed'; // Use fixed positioning to handle scrolling
             sidebar.style.top = `${headerRect.bottom}px`;
             sidebar.style.height = `${sidebarHeight}px`;
-            mainContainer.style.marginLeft = `${sidebar.offsetWidth}px`;
+
+            if(mainContainer === document.querySelector(".section-container")) {
+                //console.log(`Before offset: ${sidebar.offsetWidth}px`)
+                //mainContainer.style.marginLeft = `${sidebar.offsetWidth - 10}px`;
+                mainContainer.style.marginLeft = '151px';
+                //console.log(`After offset: ${sidebar.offsetWidth}px`)
+            }
+            else {
+                mainContainer.style.marginLeft = `${sidebar.offsetWidth}px`;
+            }
         }
     
         adjustHeight();
