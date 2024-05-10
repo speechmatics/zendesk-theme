@@ -1692,7 +1692,7 @@ text-decoration: none;
 .containerTab {
   text-align:left;
   padding: 0px 50px;
-  
+  margin-left:151px;
    }
 
 .blocks-item-link:visited, .blocks-item-link:hover, .blocks-item-link:active {
