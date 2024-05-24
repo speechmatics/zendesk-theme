@@ -5439,7 +5439,7 @@ html[dir="rtl"] .notification-left-aligned {
   top: 0;
   left: 0;
   background-color: #f9f9f9;
-  background-image: url(assets/Background-echo-Neutral.png) ;
+  background-image: url($assets-background-echo-neutral-png);
   background-size: 160% 100%;
   overflow-x: hidden;
   padding-top: 20px;
