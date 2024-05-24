@@ -1849,9 +1849,12 @@ footer ul {
 .blocks-item-link:focus {
   outline: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
 >>>>>>> e3cd36738dd31dbe30b168d748a9fe48dc4d5890
+=======
+>>>>>>> 1b7b0601c50477add895a04a7752eb95b680cda8
   text-decoration: none;
 }
 .blocks-item-title {
@@ -5657,6 +5660,7 @@ div.ribbon-text {
   font-style: italic;
   font-size: 12px;
   color: white;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     transform: rotate(-45deg);
@@ -5683,4 +5687,6 @@ align-content:first baseline;
 =======
   transform: rotate(-45deg);
 >>>>>>> e3cd36738dd31dbe30b168d748a9fe48dc4d5890
+=======
+>>>>>>> 1b7b0601c50477add895a04a7752eb95b680cda8
 }
