@@ -1617,7 +1617,7 @@ text-decoration: none;
   color: $text_color;
 }
 .blocks-item-link {
-  color: $header_color;
+  
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
@@ -1701,7 +1701,7 @@ text-decoration: none;
 }
 .blocks-item-link:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px $brand_color;
+  
   text-decoration: none;
 }
 .blocks-item-title {
@@ -5237,6 +5237,8 @@ html[dir=rtl] .notification-left-aligned {
   top: 0;
   left: 0;
   background-color: #f9f9f9;
+  background-image: url(assets/Background-echo-Neutral.png) ;
+  background-size: 160% 100%;
   overflow-x: hidden;
   padding-top: 20px;
   padding-left: 25px;
@@ -5244,6 +5246,9 @@ html[dir=rtl] .notification-left-aligned {
   scrollbar-color: #fdfdfc;
   
 }
+
+
+
 
 .sidenav a {
   padding: 4px;
@@ -5297,8 +5302,9 @@ margin-left: 60px;
 
 }
 
-.sidenav-item-title-section:active {
+.sidenav-item-title-section h3:active {
   background-color: #1282a2;
+  color: #fdfdfc;
   border-radius: 6px 0px 0px 6px;
 padding: 5px 10px;
 }
@@ -5451,4 +5457,24 @@ div.ribbon-text {
     color: white;
 
     transform: rotate(-45deg);
+}
+
+/*.loader {
+  background: url("");
+  height: 80%;
+  width: 80%;
+transform:rotate('90deg');
+align-content:first baseline;
+} */
+
+
+.homepage-body {
+  background-image: url({{asset 'Backgroundecho-Jadecopy3.png'}}) 50% -15% no-repeat,
+  url({{asset 'Backgroundecho-Orangecopy5.png'}}) 50% 140% no-repeat;
+  transform: rotate(45deg);
+  background-size:
+      100% 55%,
+      /* Size for the first image */
+      100% 55%;
+  /* Size for the second image */
 }
