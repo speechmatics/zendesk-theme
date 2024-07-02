@@ -1930,6 +1930,15 @@ footer ul {
   text-align: center;
 }
 
+.licence-button {
+  color: $brand_text_color;
+  border: 1px solid rgba(208, 213, 221, 1);
+  background: $background_color;
+  border-radius: 0.5rem;
+  padding: 10px;
+  margin: 0px;
+}
+
 .embedded-object {
   display: inline-block;
   margin-right: 10px; /* Adjust as needed */
