@@ -1,24 +1,38 @@
 <div class="container-divider"></div>
-<div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
+<div class="request-container">
+  
+  <style>
+        body {
+          background: url({{asset 'Background-echo-Amber.png'}}) 45% 130% no-repeat;
+          
+          /*background-size:
+            30% 20%,
+            /* Size for the first image */
+            
+        }
+      </style>
+
+ <!-- <nav class="sub-nav">
+  
     <div class="search-container">
       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
         <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
         <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
       </svg>
-      {{search submit=false}}
+      {{search submit=false}}  
     </div>
-  </nav>
+     
+    </nav> -->
 
-  <h1>
+     <h1 id="request-title">
     {{t 'submit_a_request'}}
     <span class="follow-up-hint">
       {{follow_up}}
     </span>
   </h1>
 
-  <div id="main-content" class="form">
+  <div id="request-main-content" class="form">
+    
     {{request_form wysiwyg=true}}
   </div>
 </div>
