@@ -703,54 +703,54 @@ input[type="submit"][disabled] {
   border-left-color: $note_left_border_color;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-
   box-shadow: 2px 5px 0px -4px rgba(16, 24, 40, 0.08),
     0px 4px 6px -2px rgba(16, 24, 40, 0.03);
   text-align: left;
   padding: 15px;
   margin: 20px;
+  margin-left: -75px;
+  width: 142%;
+  max-width: 880px;
 }
 
 .warning {
   background-color: $warning_background_color;
-
   border-left-style: solid;
   border-left-width: 5px;
   border-left-color: $warning_left_border_color;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-
   box-shadow: 2px 5px 0px -4px rgba(16, 24, 40, 0.08),
     0px 4px 6px -2px rgba(16, 24, 40, 0.03);
-
   text-align: left;
   padding: 20px;
+  margin-left: -75px;
+  width: 142%;
+  max-width: 880px;
 }
 
 .alert {
   background-color: $alert_background_color;
-
   border-left-style: solid;
   border-left-width: 5px;
   border-left-color: $alert_left_border_color;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-
   box-shadow: 2px 5px 0px -4px rgba(16, 24, 40, 0.08),
     0px 4px 6px -2px rgba(16, 24, 40, 0.03);
-
   text-align: left;
   padding: 20px;
+  margin-left: -75px;
+  width: 142%;
+  max-width: 880px;
 }
 
 .notification-admonition {
   background-color: $notification_background_color;
-
   border-left-style: solid;
   border-left-width: 5px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-
   box-shadow: 2px 5px 0px -4px rgba(16, 24, 40, 0.08),
     0px 4px 6px -2px rgba(16, 24, 40, 0.03);
   text-align: left;
