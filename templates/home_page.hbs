@@ -16,20 +16,17 @@
 <section id="main-content" class="section hero">
 
 </section>
-
-
-   <style>
-        body {
-          background: url({{asset 'Backgroundecho-Jadecopy3.png'}}) 50% -15% no-repeat,
-          url({{asset 'Backgroundecho-Orangecopy5.png'}}) 50% 140% no-repeat;
-          background-size:
+<style>
+    body {
+        background: url({{asset 'Backgroundecho-Jadecopy3.png'}}) 50% -15% no-repeat,
+        url({{asset 'Backgroundecho-Orangecopy5.png'}}) 50% 140% no-repeat;
+        background-size:
             100% 55%,
             /* Size for the first image */
             100% 55%;
-          /* Size for the second image */
-        }
-      </style>
-
+        /* Size for the second image */
+    }
+</style>
 </div>
 
 <div class="container">
@@ -41,7 +38,6 @@
             specific keywords in the search above and it will search the documentation.
             If you don't find the answer you are looking for, you can raise a ticket with us and we will be more than
             happy to help.
-
 
         <section class="categories blocks">
             <ul class="blocks-list">
@@ -72,12 +68,12 @@
                                     </span>
                                     <span class="blocks-item-description">{{ excerpt description }}</span>
                                 </a>
-</div>
-</li>
-{{/each}}
-{{/if}}
-{{/each}}
-</ul>
+                            </div>
+                        </li>
+                        {{/each}}
+                    {{/if}}
+                {{/each}}
+            </ul>
 {{ pagination }}
 
 <h1 style="margin:50px">{{ 'New Releases' }}</h1>
