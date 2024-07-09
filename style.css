@@ -355,6 +355,8 @@ textarea:focus {
   justify-content: center;
   align-items: center;
  min-height: calc(100vh - 90px);
+ margin-left: 10%;
+ 
 }
 @media (min-width: 1160px) {
   .container {
@@ -1779,7 +1781,7 @@ footer > div {
   box-sizing: border-box;
   color: $text_color;
   display: flex;
-  flex: 1 0 265px;
+  flex: 1 0 300px;
   margin: 0 0 30px;
   width: 45%;
 
@@ -1793,7 +1795,7 @@ footer > div {
   box-sizing: border-box;
   color: $text_color;
   display: flex;
-  flex: 1 0 300px;
+  flex: 1 0 500px;
   margin: 0 0 30px;
   max-width: 100%;
   text-align: left;
@@ -5732,25 +5734,25 @@ div.ribbon-text {
   justify-content: center;
   align-items:center;
   padding:20px;
-  margin: auto auto;
+  margin: auto;
   width: 100%;
   min-height: calc(100vh - 90px);
   
 }
 
+
 .request-container {
   max-width: 65%;
   max-height: 100%;
-  margin: 0 auto;
-  padding: 0 5%;
-  text-align: center;
+  margin: auto;
+  padding: 0 5%;  
   justify-content: center;
   align-items: center;
  min-height: calc(100vh - 90px);
 }
 
 
-.request-form  {
+#new_request  {
   background-color: #f9f9f8;
   margin:auto auto;
   border-radius: 8px;
@@ -5764,7 +5766,6 @@ div.ribbon-text {
   column-rule:0.5px solid #d0dddd;
   column-fill: balance;
 
-  
 }
 
 .form footer input[name=commit] {
@@ -5774,9 +5775,6 @@ div.ribbon-text {
 
 } 
 
-.request-form option {
-  display: grid;
-}
 
 label {
   margin-top: -10px;
@@ -5787,5 +5785,46 @@ label {
 }
 
 #request-title {
-  margin-top: 20px;
+  margin-top: 10px;
 } 
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+    
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 3px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
