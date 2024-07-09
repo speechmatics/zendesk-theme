@@ -991,7 +991,9 @@ table {
 
 .logo img {
   max-height: 37px;
+  max-width: 200px;
   vertical-align: middle;
+  
 }
 
 .logo {
