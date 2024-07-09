@@ -354,9 +354,7 @@ textarea:focus {
   text-align: center;
   justify-content: center;
   align-items: center;
- min-height: calc(100vh - 90px);
- margin-left: 10%;
- 
+  min-height: calc(100vh - 90px);
 }
 @media (min-width: 1160px) {
   .container {
@@ -5533,7 +5531,6 @@ html[dir="rtl"] .notification-left-aligned {
 /** Sidebar **/
 
 .sidenav {
-  
   float: left;
   z-index: 1;
   top: 0;
@@ -5546,10 +5543,14 @@ html[dir="rtl"] .notification-left-aligned {
   padding-left: 25px;
   scrollbar-width: thin;
   scrollbar-color: #fdfdfc;
-  min-height: 100%;
 }
 
-
+.sidebar-placeholder {
+  width: 18.8vw; /* Adjust this width to match the actual sidebar width */
+  min-height: 600px; /* Set this to the approximate height of the sidebar */
+  background-color: #f8f9fa; /* Light grey background to match the sidebar */
+  padding: 10px;
+}
 
 .sidenav a {
   padding: 4px;
