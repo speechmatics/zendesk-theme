@@ -5543,7 +5543,6 @@ html[dir="rtl"] .notification-left-aligned {
   padding-left: 25px;
   scrollbar-width: thin;
   scrollbar-color: #fdfdfc;
-  min-height: 100%;
 }
 
 .sidebar-placeholder {
