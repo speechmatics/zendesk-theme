@@ -402,6 +402,7 @@ ul {
 
 /***** Buttons *****/
 .button,
+.licence-button,
 .pagination-next-link,
 .pagination-prev-link,
 .pagination-first-link,
@@ -430,6 +431,7 @@ ul {
 }
 @media (min-width: 768px) {
   .button,
+  .licence-button,
   .pagination-next-link,
   .pagination-prev-link,
   .pagination-first-link,
@@ -5866,3 +5868,8 @@ label {
   opacity: 1;
 }
 
+.licence-button {
+  background: #0a2e36;
+  color: #fdfdfc;
+  margin-top: 10px;
+}
