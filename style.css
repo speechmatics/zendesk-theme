@@ -354,9 +354,7 @@ textarea:focus {
   text-align: center;
   justify-content: center;
   align-items: center;
- min-height: calc(100vh - 90px);
- margin-left: 10%;
- 
+  min-height: calc(100vh - 90px);
 }
 @media (min-width: 1160px) {
   .container {
