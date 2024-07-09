@@ -2601,6 +2601,10 @@ footer > div {
   border: 1px solid $blocks_item_border_color;
 }
 
+.siab-download-table {
+  margin-left: -75px;
+}
+
 .article tr {
   border: transparent;
 }
@@ -2675,6 +2679,28 @@ tr:last-child td:last-child {
 
 .upload-dropzone span {
   color: lighten($text_color, 20%);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /***** Social share links *****/
