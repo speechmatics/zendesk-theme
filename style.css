@@ -1767,6 +1767,7 @@ footer > div {
 .blocks-list {
   display: flex;
   flex-wrap: wrap;
+  
   justify-content: flex-start;
   list-style: none;
   padding: 0;
@@ -1916,7 +1917,7 @@ footer > div {
 .containerTab {
   text-align: left;
   padding: 0px 50px;
-  margin-left: 151px;
+  margin-left: 15px;
 }
 
 .blocks-item-link:visited,
@@ -2398,6 +2399,11 @@ footer > div {
   height: auto;
   max-width: 100%;
 }
+
+#Understanding\ Confidence\ Scores > p:nth-child(2){
+width: 80%;
+}
+
 .article-body p > img.image-style-align-left {
   float: left;
   margin: 8px 20px 6px 0;
@@ -2866,6 +2872,8 @@ tr:last-child td:last-child {
 }
 .comment-container {
   width: 100%;
+  margin-bottom: 10px;
+
 }
 .comment-form-controls {
   display: none;
@@ -4232,12 +4240,13 @@ tr:last-child td:last-child {
   display: none;
 }
 .request-title {
-  width: 100%;
+  text-align: center;
+  
 }
 @media (min-width: 1024px) {
   .request-title {
     border-bottom: 1px solid #ddd;
-    margin-bottom: 0;
+    margin-left: 250px;
     max-width: 66%;
     padding-bottom: 20px;
   }
@@ -4271,8 +4280,13 @@ tr:last-child td:last-child {
 .request-details {
   border-bottom: 1px solid #ddd;
   font-size: 0;
-  margin: 0;
-  padding-bottom: 20px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #0a2e36;
+  color: $brand_color;
+  
 }
 .request-details:last-child {
   border: 0;
