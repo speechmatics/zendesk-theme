@@ -1875,7 +1875,7 @@ footer > div {
 .inner-border {
   border-left: 2px solid #ff802a;
   margin: 25px;
-  margin-left: 2%;
+  margin-left: 20px;
   display: flex;
   flex: 1 0;
   max-width: 80%;
