@@ -364,10 +364,10 @@ textarea:focus {
 }
 
 .faq-container {
-    width: 85%;
-    margin: 0 auto;
-    margin-left: 20%;
-    padding: 0 5%;
+    width: 100%;
+    margin: auto auto;
+    /**margin-left: 20%;**/
+    padding: 0 5px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -1792,8 +1792,9 @@ footer > div {
   /*display: flex;
   /*flex-wrap: wrap;
   justify-content: flex-start;*/
+  width: 80%;
+  margin-left: 20%;
   list-style: none;
-  padding: 0;
   cursor: pointer;
 }
 
@@ -1825,15 +1826,20 @@ footer > div {
   display: flex;
   /*flex: 1 0 500px;*/
   margin: 0 0 30px;
-  max-width: 100%;
+  width: 100%;
   text-align: left;
   /*box-shadow: 0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03);*/
   align-content: center;
   flex-wrap: wrap;
-  padding-top: 15px;
+  /**padding-top: 15px;**/
   background-color: #f9f9f9;
   justify-content: center;
   align-items:center;
+}
+
+.faq-container  h1 {
+  margin-left: 20%;
+  width: 80%;
 }
 
 @media (min-width: 768px) {
@@ -1872,10 +1878,10 @@ footer > div {
   text-align: left;
 }
 
-.inner-border {
+/**.inner-border {
   border-left: 2px solid #ff802a;
   margin: 25px;
-  margin-left: 2%;
+  margin-left: 20px;
   display: flex;
   flex: 1 0;
   max-width: 80%;
@@ -1883,7 +1889,7 @@ footer > div {
   background-color: #f9f9f9;
   justify-content:center;
   align-items: center;
-}
+} **/
 
 .inner-border-releases {
   border-left: 2px solid #fcb01d;
@@ -2362,6 +2368,20 @@ footer > div {
     margin-top: 0;
   }
 }
+
+.version-badges {
+border:#7dcedc solid 1px ;
+border-radius: 3px;
+padding: 5px;
+background-color: #fafdfe;
+font-weight:600;
+font-size: .7rem;
+color: #107d98;
+margin: 1px;
+
+}
+
+
 .article-avatar {
   margin-right: 10px;
 }
@@ -5584,6 +5604,7 @@ html[dir="rtl"] .notification-left-aligned {
   padding-left: 25px;
   scrollbar-width: thin;
   scrollbar-color: #fdfdfc;
+  width: 20%;
 }
 
 .sidebar-placeholder {
@@ -5615,8 +5636,9 @@ html[dir="rtl"] .notification-left-aligned {
   border-radius: 6px 0px 0px 6px;
   padding: 4px 20px 2px 30px;
   color: #fdfdfc;
-  text-indent: 25px;
+  text-indent: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .sidenav-item-title-section h3 {
@@ -5769,8 +5791,10 @@ button:hover {
 }
 
 .block-inner {
-  padding: 15px;
-  margin-left: -5px;
+  padding: 25px 0px 0px 0px;
+  margin: 15px 15px 15px 25px;
+  width:100%;
+  border-left: 2px solid #ff802a;
 }
 
 div.ribbon + .block-inner {
