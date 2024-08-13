@@ -22,13 +22,13 @@
   <div class="section-container">
     <section id="main-content" class="section-content">
       <header class="page-header">
-        <h1 style="padding-bottom: 10px">{{section.name}}</h1>
+        <h1>{{section.name}}</h1>
 
 
       </header>
 
       {{#if settings.show_follow_section}}
-        <div style="font-size:12px; margin-bottom:10px;">{{subscribe}}</div>
+        <div style="font-size:12px; margin-bottom:10px; margin-left: 20%;">{{subscribe}}</div>
 
       {{/if}}
 
@@ -37,7 +37,7 @@
 
           {{#each section.sections}}
             <li class="blocks-item-faq">
-                <div class="inner-border">
+                <!-- <div class="inner-border"> -->
               <a href="" class="blocks-item-link">
 
                 <span class="blocks-item-faq" onclick="openTab('open');">
@@ -49,7 +49,7 @@
                   d="M5 14.5l6.1-6.1c.2-.2.2-.5 0-.7L5 1.5" />
                 </svg>
               </a>
-              </div>
+             <!-- </div> -->
             </li>
 
           {{/each}}
@@ -64,10 +64,10 @@
         <ul class="blocks-list-faq">
           {{#each section.articles}}
             <li class="blocks-item-faq">
-              <div class="inner-border">
+            <!--<div class="inner-border"> -->
               <div class="faq-container">
-                <div class="row">
-                  <div class="col-xs-3 block">
+               <!-- <div class="row">
+                  <div class="col-xs-3 block"> -->
                     <!--<div class="ribbon">
                       {{#each labels}}
                         <div class="ribbon-text">{{identifier}}</div>
@@ -102,7 +102,7 @@
                   <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"/>
                 </svg>-->
                       {{/if}}
-                      </div>
+                 <!-- </div> -->
             </li>
 
 
@@ -119,9 +119,9 @@
     </section>
     <script src="{{asset 'sidenav.js'}}"></script>
   </div>
-</div>
+<!--</div>
 
-</div>
+</div> -->
 </div>
 </div>
 </div>
