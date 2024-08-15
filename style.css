@@ -710,7 +710,6 @@ input[type="submit"][disabled] {
 /*****Admonitions*****/
 
 .note {
-  justify-self: center;
   background-color: $note_background_color;
   border-left-style: solid;
   border-left-width: 5px;
