@@ -730,8 +730,6 @@ input[type="submit"][disabled] {
    
 }
 
-
-
 .warning {
   background-color: $warning_background_color;
   border-left-color: $warning_left_border_color;
@@ -2399,6 +2397,7 @@ margin: 1px;
 }
 .article-body {
   display: flow-root;
+  text-align: left;
 }
 .article-body a {
   color: $link_color;
