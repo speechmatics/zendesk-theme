@@ -2405,6 +2405,25 @@ margin: 1px;
   font-size: 14px;
   font-weight: 700;
 }
+
+.article-body ul {
+  list-style: disc;
+  padding-inline-start: 40px;
+  list-style-position:inside;
+}
+
+.containerTab ul {
+  list-style: disc;
+  padding-inline-start: 40px;
+  list-style-position:inside;
+}
+
+.containerTab h1 {
+margin: auto 30%;
+justify-content: center;
+align-items: center;
+}
+
 .article-body a:visited {
   color: $visited_link_color;
 }
