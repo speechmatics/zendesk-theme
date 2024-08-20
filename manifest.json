@@ -140,6 +140,13 @@
           "description": "codeblock_background_color_description",
           "label": "codeblock_background_color_label",
           "value": "rgba(252, 252, 253, 1)"
+        },
+        {
+          "identifier": "sidenav_link_hover_colour",
+          "type": "color",
+          "description": "sidenav_link_hover_colour_desc",
+          "label": "codeblock_background_color_label",
+          "value": "rgba(161, 195, 178, 0.3)"
         }
       ]
     },
