@@ -4330,7 +4330,7 @@ tr:last-child td:last-child {
   white-space: pre;
 }
 .request-details dt {
-  color: lighten($text_color, 20%);
+  color: $brand_color;
   width: 40%;
 }
 .request-details .request-collaborators {
@@ -5617,7 +5617,7 @@ html[dir="rtl"] .notification-left-aligned {
   background-color: #1282a2;
   color: #fdfdfc;
   border-radius: 6px 0px 0px 6px;
-  padding: 5px 10px;
+  padding: 5px 5px;
 }
 
 .sidenav-item-title-category h4 {
@@ -5625,11 +5625,10 @@ html[dir="rtl"] .notification-left-aligned {
   font-weight: 550;
   background-color: #0a2e36;
   border-radius: 6px 0px 0px 6px;
-  padding: 4px 20px 2px 30px;
+  padding: 4px 50px 2px 20px;
   color: #fdfdfc;
-  text-indent: 10px;
-  margin-bottom: 10px;
-  text-align: center;
+  margin: 0px 0px 5px 35px;
+  
 }
 
 .sidenav-item-title-section h3 {
@@ -5920,4 +5919,44 @@ label {
   background: #0a2e36;
   color: #fdfdfc;
   margin-top: 10px;
+}
+
+.toc-container {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 180px;
+  right: 100px;
+  overflow-x: hidden;
+  padding: 0.8rem 0;
+  border-left: solid 1px #dadde1;
+}
+
+.toc-container a {
+  padding: 0.6rem 0;
+  text-decoration: none;
+  font-size: .8rem;
+  color: rgba(0, 112, 141, .95);
+  display: block;
+  text-align:left;
+  margin-left: 15px;
+}
+
+.toc-container li {
+  text-decoration: none;
+  font-size: .8rem;
+  color: rgba(0, 112, 141, .95);
+  display: block;
+  text-align:left;
+  margin-left: 15px;
+  
+}
+
+.toc-container a:hover {
+  color: #064579;
+}
+
+@media screen and (max-height: 450px) {
+  .toc {padding-top: 15px;}
+  .toc a {font-size: 18px;}
 }
