@@ -5,17 +5,17 @@ const headings = document.querySelectorAll('h2, h3');
 const tocList = document.getElementById('toc-list');
 
 // Loop through each heading to generate TOC items
-headings.forEach((heading, index) => {
+//headings.forEach((heading, index) => {
     // Create a unique ID for each heading if not already present
-    if (!heading.id) {
-        heading.id = 'heading-' + index;
-    }
+ //   if (!heading.id) {
+  //      heading.id = 'heading-' + index;
+  //  }
 
 
     headings.forEach((heading) => {
         const headingText = heading.textContent.trim();
     // Create a list item and anchor for each heading
-    if (heading.textContent !== 'Search' && heading.textContent !== 'Related Articles') {
+    if (heading.textContent !== 'Search' && heading.textContent !== 'Related articles') {
     const tocItem = document.createElement('li');
     const tocLink = document.createElement('a');
     
@@ -36,4 +36,5 @@ headings.forEach((heading, index) => {
         tocItem.style.marginLeft = '20px'; // Indent for h3
     }
 
-});
+//})
+;

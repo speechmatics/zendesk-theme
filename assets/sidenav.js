@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sidebar.style.height = `${sidebarHeight}px`;
 
             if(mainContainer === document.querySelector(".section-container")) {
-                mainContainer.style.marginLeft = '151px';
+                mainContainer.style.marginLeft = '35%';
             } else {
                 mainContainer.style.marginLeft = `${sidebar.offsetWidth}px`;
             }
