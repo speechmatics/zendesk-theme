@@ -1,5 +1,10 @@
 <div class="container-divider"></div>
-<div class="container">
+  <div class="container">
+    <div class="container sidenav">
+      <ul id="dynamicCategoryList" class="sidebar-placeholder"></ul>
+        <p>Loading sidebar...</p>
+    </div>
+
   <nav class="sub-nav">
     
    <!-- <div class="search-container">
@@ -12,12 +17,9 @@
     </div>-->
   </nav>
 
-  <div class="sidenav">
-    <ul id="dynamicCategoryList" class="sidebar-placeholder"></ul>
-    <p>Loading sidebar...</p>
-  </div>
+  
 
-  <div class="article-container" id="article-container">
+  <!-- <div class="article-container" id="article-container">
     <aside class="visibility-hidden" aria-labelledby="section-articles-title">
       {{#if settings.show_articles_in_section}}
         <div class="collapsible-sidebar">
@@ -50,7 +52,7 @@
           {{related_articles}}
         </div>
       {{/if}}
-    </aside>
+    </aside> -->
 
     <article id="main-content" class="article">
       <header class="article-header">
@@ -99,16 +101,12 @@
         {{/if}}-->
       </header>
 
-  
-<div class="toc-container">
- 
-  <ul id="toc-list"></ul>
-  
-</div>
- 
 
       <section class="article-info">
         <div class="article-content">
+          <div id="toc-sidebar" class="toc-container">
+            <ul id="toc-list"></ul>
+          </div>
           <div class="article-body">{{article.body}}</div>
 
           <!--
