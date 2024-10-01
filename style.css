@@ -19,6 +19,8 @@
   font-style: normal;
 }
 
+@import '@zendeskgarden/css-bedrock';
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
