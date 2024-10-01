@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@zendeskgarden/css-bedrock": "^9.1.1"
+  }
+}
