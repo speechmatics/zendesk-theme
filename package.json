@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@zendeskgarden/css-bedrock": "^9.1.1",
-    "@zendeskgarden/css-forms": "^7.0.22"
+    "@zendeskgarden/css-bedrock": "^9.1.1"
   }
 }
