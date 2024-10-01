@@ -5974,3 +5974,6 @@ label {
   .toc {padding-top: 15px;}
   .toc a {font-size: 18px;}
 }
+
+/*garden*/
+@import '@zendeskgarden/css-forms';
